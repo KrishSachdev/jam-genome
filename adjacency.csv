@@ -1,0 +1,47 @@
+from_id,to_id,link_type,via,notes
+weh_dahisar,weh_borivali,corridor,WEH,
+weh_borivali,weh_malad,corridor,WEH,
+weh_malad,weh_goregaon,corridor,WEH,
+weh_goregaon,weh_jvlr,corridor,WEH,
+weh_jvlr,weh_airport,corridor,WEH,
+weh_airport,weh_vile_parle,corridor,WEH,
+weh_vile_parle,weh_kherwadi,corridor,WEH,
+weh_kherwadi,weh_kalanagar,corridor,WEH,
+weh_kalanagar,weh_mahim,corridor,WEH,
+eeh_teen_hath,eeh_mulund,corridor,EEH,
+eeh_mulund,eeh_bhandup,corridor,EEH,
+eeh_bhandup,eeh_vikhroli,corridor,EEH,
+eeh_vikhroli,eeh_amar_mahal,corridor,EEH,
+eeh_amar_mahal,eeh_chembur,corridor,EEH,
+eeh_chembur,eeh_sion,corridor,EEH,
+lbs_mulund,lbs_bhandup,corridor,LBS Marg,long gap - interpret with care
+lbs_bhandup,lbs_kurla,corridor,LBS Marg,long gap - interpret with care
+andheri_subway,sv_irla,corridor,SV Road,
+sv_irla,milan_subway,corridor,SV Road,
+milan_subway,sv_bandra,corridor,SV Road,
+weh_jvlr,jvlr_powai,corridor,JVLR,
+jvlr_powai,jvlr_eeh,corridor,JVLR,
+jvlr_eeh,eeh_vikhroli,connector,JVLR-EEH junction,
+ghodbunder,eeh_teen_hath,connector,Kapurbawdi junction,
+ghodbunder,weh_dahisar,connector,Kashimira / WEH north,long+weak link
+eeh_mulund,lbs_mulund,connector,Mulund cross streets,
+eeh_bhandup,lbs_bhandup,connector,Bhandup cross streets,
+lbs_kurla,sakinaka,connector,Andheri-Kurla Rd,
+sakinaka,weh_airport,connector,Andheri-Kurla Rd via Marol,
+lbs_kurla,sclr_kurla,connector,SCLR east ramp,
+sclr_kurla,weh_kherwadi,connector,SCLR west end at WEH Vakola,
+sclr_kurla,eeh_amar_mahal,connector,SCLR east end,
+weh_kalanagar,sclr_kurla,connector,BKC internal roads,weak link
+eeh_sion,sion_circle,connector,Sion flyover / Sion Rd,
+sion_circle,kings_circle,connector,Dr Ambedkar Rd,
+kings_circle,hindmata,connector,Dr Ambedkar Rd,
+hindmata,toi_junction,connector,JJ flyover / DN Rd,long+weak link
+sion_circle,sion_panvel,connector,Sion-Panvel Hwy west end,
+eeh_chembur,sion_panvel,connector,Chembur naka,
+sv_bandra,linking_road,connector,Turner Rd / cross streets,
+sv_bandra,weh_mahim,connector,SV Rd south end,
+weh_mahim,tulsi_pipe,connector,Tulsi Pipe north end,
+kings_circle,weh_mahim,connector,L.J. Marg,weak link
+milan_subway,weh_vile_parle,connector,Milan flyover,
+andheri_subway,weh_jvlr,connector,Gokhale bridge / Andheri E,weak link
+tulsi_pipe,hindmata,connector,Parel cross roads,weak link

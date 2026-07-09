@@ -1,0 +1,46 @@
+name: collect
+
+on:
+  schedule:
+    # Offset from :00/:30 — GitHub's cron queue is congested exactly on the
+    # hour/half-hour and skipped runs are far more likely there.
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Poll TomTom
+        env:
+          TOMTOM_API_KEY: ${{ secrets.TOMTOM_API_KEY }}
+        run: python collector/poll.py
+
+      - name: Log weather (rain confounder control)
+        run: python collector/weather.py
+
+      - name: Commit data
+        run: |
+          git config user.name "jam-genome collector"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "no new data"; exit 0; fi
+          git commit -m "data: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull --rebase origin main
+          git push

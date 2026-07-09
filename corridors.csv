@@ -1,0 +1,37 @@
+point_id,name,lat,lon,corridor,direction,notes
+weh_dahisar,WEH Dahisar toll naka,19.24797,72.86508,WEH,SB,coords tuned via wide API probe 2026-07-10
+weh_borivali,WEH Borivali (National Park),19.22893,72.86342,WEH,SB,coords tuned via API probe 2026-07-10
+weh_malad,WEH Malad East,19.18607,72.85845,WEH,SB,coords tuned via API probe 2026-07-10
+weh_goregaon,WEH Goregaon (Oberoi Mall),19.17283,72.85936,WEH,SB,coords tuned via API probe 2026-07-10
+weh_jvlr,WEH x JVLR flyover (Jogeshwari E),19.1235,72.8565,WEH,SB,approx coords - validate week 1
+weh_airport,WEH Airport / Sahar elevated approach,19.10557,72.85385,WEH,SB,coords tuned via API probe 2026-07-10
+weh_vile_parle,WEH Vile Parle,19.09324,72.85071,WEH,SB,coords tuned via API probe 2026-07-10
+weh_kherwadi,WEH Kherwadi junction (Bandra E),19.0600,72.8470,WEH,SB,approx coords - validate week 1
+weh_kalanagar,WEH Kalanagar junction (BKC entry),19.0525,72.8425,WEH,junction,famous chokepoint - must validate
+weh_mahim,WEH south end / Mahim,19.0420,72.8410,WEH,junction,junction approach - slow freeflow expected (FRC2 ff24 verified 2026-07-10)
+eeh_teen_hath,EEH Teen Hath Naka (Thane),19.1865,72.9717,EEH,junction,naka junction - slow freeflow expected (verified 2026-07-10)
+eeh_mulund,EEH Mulund check naka,19.1725,72.9565,EEH,junction,naka junction - slow freeflow expected (verified 2026-07-10)
+eeh_bhandup,EEH Bhandup,19.14166,72.94881,EEH,SB,coords tuned via API probe 2026-07-10
+eeh_vikhroli,EEH Vikhroli,19.10743,72.93163,EEH,SB,coords tuned via API probe 2026-07-10
+eeh_amar_mahal,EEH Amar Mahal junction (Ghatkopar/Chembur),19.05969,72.90602,EEH,junction,coords tuned via API probe 2026-07-10
+eeh_chembur,EEH Chembur,19.05401,72.89292,EEH,SB,coords tuned via wide API probe 2026-07-10
+eeh_sion,EEH Sion flyover,19.04236,72.86427,EEH,SB,coords tuned via API probe 2026-07-10
+lbs_mulund,LBS Marg Mulund,19.17142,72.94344,LBS,both,coords tuned via API probe 2026-07-10
+lbs_bhandup,LBS Marg Bhandup,19.1440,72.9340,LBS,both,approx coords - validate week 1
+lbs_kurla,LBS Marg x CST Rd (Kurla),19.0705,72.8790,LBS,junction,famous chokepoint - must validate
+sv_irla,SV Road Irla (Vile Parle W),19.10795,72.83682,SV,both,coords tuned via API probe 2026-07-10
+sv_bandra,SV Road Bandra,19.0550,72.8380,SV,both,approx coords - validate week 1
+linking_road,Linking Road Bandra,19.06415,72.83484,LINK,both,coords tuned via API probe 2026-07-10
+milan_subway,Milan subway (Santacruz),19.07806,72.83780,SV,junction,coords tuned via API probe 2026-07-10
+andheri_subway,Andheri subway (SV Rd),19.1190,72.8440,SV,junction,famous chokepoint - must validate
+jvlr_powai,JVLR Powai (Hiranandani),19.12023,72.90623,JVLR,both,coords tuned via API probe 2026-07-10
+jvlr_eeh,JVLR x EEH end (Kanjurmarg),19.1130,72.9265,JVLR,junction,approx coords - validate week 1
+sclr_kurla,SCLR (Kurla),19.0690,72.8890,SCLR,both,approx coords - validate week 1
+sion_panvel,Sion-Panvel Hwy (Chembur naka),19.0415,72.8950,SPH,both,approx coords - validate week 1
+ghodbunder,Ghodbunder Rd Manpada (Thane),19.2325,72.9690,GBR,both,approx coords - validate week 1
+tulsi_pipe,Tulsi Pipe Rd / Senapati Bapat Marg (Lower Parel),19.0000,72.8290,TPR,both,approx coords - validate week 1
+sion_circle,Sion Circle,19.0430,72.8630,junction,junction,famous chokepoint - must validate
+kings_circle,King's Circle (Matunga),19.0275,72.8575,junction,junction,famous chokepoint - must validate
+hindmata,Hindmata junction (Dadar E),19.01009,72.84255,junction,junction,coords tuned via API probe 2026-07-10
+toi_junction,Times of India junction (DN Rd/CSMT),18.9403,72.8350,junction,junction,confirm which TOI junction is meant - validate
+sakinaka,Sakinaka junction (Andheri-Kurla Rd),19.1032,72.8878,AKR,junction,famous chokepoint - must validate

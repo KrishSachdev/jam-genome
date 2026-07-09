@@ -1,0 +1,4 @@
+# collector (the GitHub Actions workflow installs only this)
+requests
+# local analysis
+pandas
