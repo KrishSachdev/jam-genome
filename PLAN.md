@@ -28,7 +28,7 @@
 
 - Python script `collector/poll.py`: read `corridors.csv`, hit Flow Segment Data per point, append one JSONL line per point: `{ts_utc, point_id, current_speed, freeflow_speed, current_tt, freeflow_tt, confidence, closure}`. Retries with backoff; failures logged, never crash the run.
 - Output: `data/raw/YYYY-MM-DD.jsonl` (~0.5 MB/day raw → trivial; gzip monthly).
-- **Scheduling: GitHub Actions cron every 30 min** committing data back to the repo — free, always-on, transparent, survives the laptop being off. (Known caveat: Actions cron can jitter/skip a few minutes at busy times — harmless here. Fallback: Windows Task Scheduler on the PC.)
+- **Scheduling: GitHub Actions cron** committing data back to the repo — free, always-on, transparent, survives the laptop being off. (Reality check 2026-07-11: Actions skipped ~75% of slots on day 1 — far worse than "a few minutes of jitter". Mitigated with 15-min cron attempts + a hard daily budget guard in poll.py. If effective cadence stays coarser than ~30 min, switch to an external pinger — e.g. cron-job.org POSTing a `workflow_dispatch` to the GitHub API with a fine-grained PAT — which makes timing deterministic. Fallback: Windows Task Scheduler on the PC.)
 - API key via repo secret. Never commit the key.
 - Weekly data-quality notebook: missing polls per point, confidence distribution, dead/misplaced points (a point snapping to the wrong road shows as flat freeflow forever — fix coords early).
 - **Every week of monsoon+festival season data is irreplaceable — collector goes live before any analysis is written.**

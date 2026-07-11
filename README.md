@@ -44,8 +44,10 @@ length). Failed polls keep `ts_utc`/`point_id` and carry an `error` field.
 
 1. **TomTom API key** — free account at
    [developer.tomtom.com](https://developer.tomtom.com); free tier is 2,500
-   requests/day. Budget: 36 points × 48 polls/day = **1,728/day** (headroom to
-   grow to 50 points = 2,400).
+   requests/day. The workflow *attempts* a run every 15 minutes because
+   GitHub's shared cron skips most slots (observed ~25% fire rate,
+   2026-07-11); `poll.py` hard-caps at **2,376 requests/day** (66 runs × 36
+   points) so over-firing can never exceed the quota.
 2. **Validate the points** — all 36 were API-validated on 2026-07-10 with
    zero flags (`validation_report.csv` is the record). Re-run whenever you
    edit or add points:

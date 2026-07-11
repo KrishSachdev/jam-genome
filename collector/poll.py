@@ -27,6 +27,11 @@ API_URL = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10
 MAX_TRIES = 3
 INTER_POINT_SLEEP = 0.25  # TomTom free tier allows ~5 QPS; stay far below it
 
+# Hard daily budget guard (TomTom free tier: 2,500 req/day). The cron
+# attempts every 15 min because GitHub skips most slots; if it ever fires
+# them all, this cap (66 runs x 36 points = 2,376) keeps us under quota.
+MAX_LINES_PER_DAY = 2376
+
 
 def load_points():
     with open(CORRIDORS, newline="", encoding="utf-8") as f:
@@ -63,6 +68,13 @@ def main():
     points = load_points()
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     out_path = RAW_DIR / (datetime.now(timezone.utc).strftime("%Y-%m-%d") + ".jsonl")
+
+    if out_path.exists():
+        with open(out_path, encoding="utf-8") as f:
+            lines_today = sum(1 for _ in f)
+        if lines_today + len(points) > MAX_LINES_PER_DAY:
+            print(f"budget guard: {lines_today} lines already today, skipping run")
+            return
 
     ok = failed = 0
     session = requests.Session()

@@ -2,9 +2,12 @@ name: collect
 
 on:
   schedule:
-    # Offset from :00/:30 — GitHub's cron queue is congested exactly on the
-    # hour/half-hour and skipped runs are far more likely there.
-    - cron: "7,37 * * * *"
+    # Attempt every 15 min: GitHub's shared cron skips most slots on this
+    # repo (observed ~25% fire rate on 2026-07-11), so dense attempts are
+    # needed to approach the intended 30-min cadence. poll.py enforces a
+    # hard daily request budget, so over-firing can never exceed the TomTom
+    # quota. Offsets avoid :00/:15/:30/:45 where the queue is busiest.
+    - cron: "2,17,32,47 * * * *"
   workflow_dispatch:
 
 concurrency:
@@ -19,9 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
