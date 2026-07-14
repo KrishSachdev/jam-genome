@@ -40,6 +40,11 @@ data/weather/            YYYY-MM-DD.jsonl, one line per poll
 Speeds are km/h, travel times are seconds (TomTom's segment, not a fixed
 length). Failed polls keep `ts_utc`/`point_id` and carry an `error` field.
 
+**Data caveats:** `tulsi_pipe` rows from 2026-07-09 to 2026-07-13 should be
+ignored — the whole Tulsi Pipe Rd corridor is flagged `closure: true` in
+TomTom (bridge works), so its readings are meaningless. Replaced by
+`annie_besant_worli` on 2026-07-13.
+
 ## Going live (weekend-1 checklist)
 
 1. **TomTom API key** — free account at

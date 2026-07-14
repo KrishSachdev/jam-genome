@@ -32,6 +32,13 @@ INTER_POINT_SLEEP = 0.25  # TomTom free tier allows ~5 QPS; stay far below it
 # them all, this cap (66 runs x 36 points = 2,376) keeps us under quota.
 MAX_LINES_PER_DAY = 2376
 
+# Spacing guard: the cron-job.org pinger provides the reliable 30-min
+# backbone, and GitHub's own cron often fires a duplicate run minutes later
+# (observed 27 near-duplicate runs on 2026-07-12, ~40% of the day's budget).
+# Skipping any run within 22 min of the previous poll turns those duplicates
+# into no-ops, so the daily cap can never truncate evening coverage.
+MIN_GAP_MINUTES = 22
+
 
 def load_points():
     with open(CORRIDORS, newline="", encoding="utf-8") as f:
@@ -70,11 +77,24 @@ def main():
     out_path = RAW_DIR / (datetime.now(timezone.utc).strftime("%Y-%m-%d") + ".jsonl")
 
     if out_path.exists():
+        lines_today = 0
+        last_line = None
         with open(out_path, encoding="utf-8") as f:
-            lines_today = sum(1 for _ in f)
+            for line in f:
+                lines_today += 1
+                last_line = line
         if lines_today + len(points) > MAX_LINES_PER_DAY:
             print(f"budget guard: {lines_today} lines already today, skipping run")
             return
+        if last_line:
+            try:
+                prev_ts = datetime.fromisoformat(json.loads(last_line)["ts_utc"])
+                age_min = (datetime.now(timezone.utc) - prev_ts).total_seconds() / 60
+                if age_min < MIN_GAP_MINUTES:
+                    print(f"spacing guard: last poll {age_min:.0f} min ago, skipping run")
+                    return
+            except (KeyError, ValueError):
+                pass
 
     ok = failed = 0
     session = requests.Session()

@@ -38,6 +38,7 @@
 
 - Congestion metric: `speed_ratio = current/freeflow`; congestion episode = ratio below threshold (start 0.5) for ≥2 consecutive polls. Run sensitivity analysis on the threshold — don't hard-code one number.
 - Deliverables: corridor heatmaps (hour-of-day × point), weekday/weekend profiles, "congestion-hours per day" league table, episode duration distributions.
+- *(Tooling built 2026-07-14: `analysis/episodes.py` (episode extraction + threshold sensitivity, reused by Phase 3) and `analysis/eda.py` (league table CSV, heatmap, weekday/weekend profiles). First 4-day read: EEH Vikhroli is the early league leader with a recurring weekday-evening jam; conclusions still need the full 2 weeks.)*
 - This alone is publishable content: "Mumbai's slowest corridors, measured every 30 minutes for a month."
 
 ## Phase 3 — Propagation mining (the core, weeks 5–8)

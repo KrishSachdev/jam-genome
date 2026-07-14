@@ -44,9 +44,10 @@ def main():
 
     good = df[df["error"].isna()].copy()
     good["speed_ratio"] = good["current_speed"] / good["freeflow_speed"]
+    good["slot"] = good["ts_utc"].dt.floor("30min")
 
     report = good.groupby("point_id").agg(
-        polls=("ts_utc", "count"),
+        slots_covered=("slot", "nunique"),
         mean_conf=("confidence", "mean"),
         closures=("closure", "sum"),
         freeflow_nunique=("freeflow_speed", "nunique"),
@@ -59,7 +60,7 @@ def main():
     report["errors"] = (
         df[df["error"].notna()].groupby("point_id").size().reindex(all_ids).fillna(0).astype(int)
     )
-    report["missing_pct"] = (1 - report["polls"].fillna(0) / slots) * 100
+    report["missing_pct"] = (1 - report["slots_covered"].fillna(0) / slots) * 100
     report["flat_freeflow"] = (report["freeflow_nunique"] <= 1) & (report["min_ratio"] > 0.95)
     report = report.sort_values("missing_pct", ascending=False)
 

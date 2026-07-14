@@ -40,8 +40,8 @@ sion_circle,sion_panvel,connector,Sion-Panvel Hwy west end,
 eeh_chembur,sion_panvel,connector,Chembur naka,
 sv_bandra,linking_road,connector,Turner Rd / cross streets,
 sv_bandra,weh_mahim,connector,SV Rd south end,
-weh_mahim,tulsi_pipe,connector,Tulsi Pipe north end,
+weh_mahim,annie_besant_worli,connector,Cadell Rd / VS Marg spine,long link via Prabhadevi
 kings_circle,weh_mahim,connector,L.J. Marg,weak link
 milan_subway,weh_vile_parle,connector,Milan flyover,
 andheri_subway,weh_jvlr,connector,Gokhale bridge / Andheri E,weak link
-tulsi_pipe,hindmata,connector,Parel cross roads,weak link
+annie_besant_worli,hindmata,connector,Worli-Parel cross roads,long+weak link

@@ -29,7 +29,7 @@ jvlr_eeh,JVLR x EEH end (Kanjurmarg),19.1130,72.9265,JVLR,junction,approx coords
 sclr_kurla,SCLR (Kurla),19.0690,72.8890,SCLR,both,approx coords - validate week 1
 sion_panvel,Sion-Panvel Hwy (Chembur naka),19.0415,72.8950,SPH,both,approx coords - validate week 1
 ghodbunder,Ghodbunder Rd Manpada (Thane),19.2325,72.9690,GBR,both,approx coords - validate week 1
-tulsi_pipe,Tulsi Pipe Rd / Senapati Bapat Marg (Lower Parel),19.0000,72.8290,TPR,both,approx coords - validate week 1
+annie_besant_worli,Annie Besant Rd (Worli),18.99556,72.81594,ABR,both,replaces tulsi_pipe 2026-07-13 (whole Tulsi Pipe corridor flagged closed in TomTom); probe-verified open FRC1
 sion_circle,Sion Circle,19.0430,72.8630,junction,junction,famous chokepoint - must validate
 kings_circle,King's Circle (Matunga),19.0275,72.8575,junction,junction,famous chokepoint - must validate
 hindmata,Hindmata junction (Dadar E),19.01009,72.84255,junction,junction,coords tuned via API probe 2026-07-10
