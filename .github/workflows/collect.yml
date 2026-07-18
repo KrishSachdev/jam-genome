@@ -22,7 +22,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # ref: main — without it, checkout uses the SHA pinned at *trigger*
+      # time, so a run queued seconds behind another starts from a snapshot
+      # that lacks the first run's data commit. That blinds poll.py's
+      # 22-min spacing guard (duplicate poll, wasted budget) and the commit
+      # step then dies on a rebase conflict (3 failed runs on 2026-07-18).
       - uses: actions/checkout@v5
+        with:
+          ref: main
 
       - uses: actions/setup-python@v6
         with:
