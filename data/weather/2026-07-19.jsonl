@@ -1,1 +1,2 @@
 {"ts_utc": "2026-07-19T00:12:34+00:00", "temp_c": 25.9, "precip_mm": 0.2, "rain_mm": 0.1}
+{"ts_utc": "2026-07-19T00:42:25+00:00", "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=15)"}
