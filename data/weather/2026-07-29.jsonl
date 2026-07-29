@@ -35,3 +35,4 @@
 {"ts_utc": "2026-07-29T14:42:35+00:00", "temp_c": 27.6, "precip_mm": 0.1, "rain_mm": 0.1}
 {"ts_utc": "2026-07-29T14:56:18+00:00", "temp_c": 27.6, "precip_mm": 0.1, "rain_mm": 0.1}
 {"ts_utc": "2026-07-29T15:12:32+00:00", "temp_c": 27.7, "precip_mm": 0.1, "rain_mm": 0.1}
+{"ts_utc": "2026-07-29T15:42:26+00:00", "error": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=15)"}
