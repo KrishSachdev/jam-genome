@@ -1,12 +1,8 @@
 """Build the citywide-sweep progress map from sweep_state.json.
 
-NOTE (recovered 2026-08-07): this is the DAY-1 version of the builder. Three
-later improvements were made in the original session and are NOT in this copy
--- see sweep/README.md "Known gaps". Re-add them before relying on it:
-  1. geometry simplification (25 m tolerance; halved 22,210 -> 10,891 vertices)
-  2. self-updating copy (headline/day count/progress read from state, not
-     hardcoded "537 probes" / "day 1 of ~10" as below)
-  3. el.style.stroke / el.style.strokeWidth instead of setAttribute
+All copy on the page is derived from the state file, so nothing goes stale
+between runs. Geometry is simplified at 25 m -- invisible at map scale, and
+without it the payload passes 1 MB well before the sweep finishes.
 """
 import json
 import math
@@ -21,6 +17,7 @@ done = st["done"]
 
 LAT0, LON0 = 19.080, 72.870
 KM_LAT, KM_LON = 110.57, 111.32 * math.cos(math.radians(19.08))
+SIMPLIFY_KM = 0.025          # 25 m
 
 
 def proj(lat, lon):
@@ -35,14 +32,50 @@ def dedupe(pts):
     return out
 
 
+def simplify(pts, tol=SIMPLIFY_KM):
+    """Ramer-Douglas-Peucker, iterative so long polylines can't blow the stack."""
+    if len(pts) < 3:
+        return pts
+    keep = [False] * len(pts)
+    keep[0] = keep[-1] = True
+    stack = [(0, len(pts) - 1)]
+    while stack:
+        i, j = stack.pop()
+        if j <= i + 1:
+            continue
+        (x1, y1), (x2, y2) = pts[i], pts[j]
+        dx, dy = x2 - x1, y2 - y1
+        span = math.hypot(dx, dy)
+        worst_d, worst_k = -1.0, None
+        for k in range(i + 1, j):
+            x0, y0 = pts[k]
+            if span == 0:
+                d = math.hypot(x0 - x1, y0 - y1)
+            else:
+                d = abs(dy * x0 - dx * y0 + x2 * y1 - y2 * x1) / span
+            if d > worst_d:
+                worst_d, worst_k = d, k
+        if worst_d > tol:
+            keep[worst_k] = True
+            stack.append((i, worst_k))
+            stack.append((worst_k, j))
+    return [p for p, k in zip(pts, keep) if k]
+
+
+raw_v = simp_v = 0
 out_segs = []
 for sid, s in sorted(segs.items(), key=lambda kv: kv[1]["km"]):
     if not s["geom"]:
         continue
+    pts = dedupe([proj(a, b) for a, b in s["geom"]])
+    raw_v += len(pts)
+    pts = simplify(pts)
+    simp_v += len(pts)
     out_segs.append({
         "id": sid[:6], "frc": s["frc"], "ff": s["ff"], "km": s["km"], "hits": s["hits"],
-        "pts": dedupe([proj(a, b) for a, b in s["geom"]]),
+        "pts": pts,
     })
+print(f"vertices: {raw_v:,} -> {simp_v:,} after {SIMPLIFY_KM*1000:.0f} m simplification")
 
 probes = [list(proj(a, b)) for a, b in done]
 mask = [list(proj(a, b)) for a, b in SW.MUMBAI]
@@ -52,11 +85,16 @@ sgnp = [list(proj(la, lo)) for la, lo in
 
 grid_total = len(SW.build_grid())
 swept_lat_max = max(c[0] for c in done)
+swept_lat_min = min(c[0] for c in done)
 frontier_y = proj(swept_lat_max, LON0)[1]
+front_km = (swept_lat_max - swept_lat_min) * KM_LAT   # how far north the sweep has reached
 
 n_short = sum(1 for s in out_segs if s["km"] <= 3)
 n_long = sum(1 for s in out_segs if s["km"] > 10)
 pct = len(done) / grid_total * 100
+# typical daily allowance, from what this sweep has actually been granted
+per_day = (sum(st["used_by_day"].values()) / len(st["used_by_day"])) if st["used_by_day"] else 670
+days_left = math.ceil((grid_total - len(done)) / max(per_day, 1))
 
 payload = {"segs": out_segs, "probes": probes, "mask": mask, "sgnp": sgnp,
            "frontier": round(frontier_y, 3)}
@@ -174,22 +212,23 @@ HTML = r"""<title>Mumbai segment sweep - Colaba to Dahisar</title>
 <div class="wrap"><div class="inner">
 
   <header>
-    <div class="eyebrow">Jam Genome &middot; citywide sweep &middot; day 1 of ~10</div>
-    <h1>__NSEG__ road segments found in the first 8 km north of Navy Nagar</h1>
+    <div class="eyebrow">Jam Genome &middot; citywide sweep &middot; __PCT__% complete &middot; ~__DAYSLEFT__ days to go</div>
+    <h1>__NSEG__ road segments mapped in the first __FRONTKM__ km north of Navy Nagar</h1>
     <p class="lede">Sweeping Greater Mumbai on a 260&nbsp;m grid to enumerate every distinct TomTom
-    road segment. Day one covered <b>Colaba through Malabar Hill to Mahalaxmi</b> &mdash; 537 probes,
-    <b>__NSEG__ segments</b>, __NSHORT__ of them short enough to measure a single junction. South
-    Mumbai's street grid is far richer than the highway corridors: here <b>__PCTSHORT__% are usable</b>,
+    road segment &mdash; because every reading belongs to a whole segment, and a point on a 20&nbsp;km
+    segment can never show a junction jam. So far <b>__NPROBE__ probes</b> have found
+    <b>__NSEG__ segments</b>, __NSHORT__ of them short enough to measure a single junction. The island
+    city's street grid is far richer than the highway corridors: here <b>__PCTSHORT__% are usable</b>,
     against almost none on the WEH mainline.</p>
   </header>
 
   <div class="prog">
     <div class="track"><div class="fill" style="width:__PCT__%"></div></div>
-    <div class="prow"><span>537 of __GRIDTOTAL__ grid cells probed</span><span>__PCT__% complete</span></div>
+    <div class="prow"><span>__NPROBE__ of __GRIDTOTAL__ grid cells probed</span><span>__PCT__% complete</span></div>
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="n">537</div><div class="k">probes, zero errors</div></div>
+    <div class="stat"><div class="n">__NPROBE__</div><div class="k">probes, zero errors</div></div>
     <div class="stat"><div class="n">__NSEG__</div><div class="k">distinct segments</div></div>
     <div class="stat good"><div class="n">__NSHORT__</div><div class="k">usable &mdash; under 3 km</div></div>
     <div class="stat bad"><div class="n">__NLONG__</div><div class="k">blobs over 10 km</div></div>
@@ -212,12 +251,12 @@ HTML = r"""<title>Mumbai segment sweep - Colaba to Dahisar</title>
       <svg id="map" role="img" aria-label="Map of road segments found so far in the Mumbai sweep"></svg>
       <div class="tip mono" id="tip"></div>
     </div>
-    <div class="cap" id="cap">Grey dots are the 537 probe points. Hover any segment for its length.</div>
+    <div class="cap" id="cap">Grey dots are the __NPROBE__ probe points. Hover any segment for its length.</div>
   </div>
 
-  <p class="note"><strong>What the two views show:</strong> <em>Swept so far</em> is day one's territory
-  &mdash; the dense tangle of short green segments is South Mumbai's street grid, exactly the resolution
-  this project needs. <em>Whole sweep area</em> pulls back to the full Colaba&ndash;Dahisar mask: the
+  <p class="note"><strong>What the two views show:</strong> <em>Swept so far</em> is the territory
+  covered to date &mdash; the dense tangle of short green segments is the island city's street grid,
+  exactly the resolution this project needs. <em>Whole sweep area</em> pulls back to the full Colaba&ndash;Dahisar mask: the
   dashed outline is everything still to probe, the green line marks the frontier, and the long red
   segments already reach far past it, because a single segment can span half the city.</p>
 
@@ -314,7 +353,16 @@ function hot(id){
   svg.querySelectorAll('.seg').forEach(e=>e.classList.toggle('dim',e.dataset.id!==id));
   tbody.querySelectorAll('tr').forEach(r=>r.classList.remove('hot'));
   const row=tbody.querySelector('tr[data-id="'+id+'"]');
-  if(row){row.classList.add('hot'); row.scrollIntoView({block:'nearest'});}
+  if(!row) return;
+  row.classList.add('hot');
+  // Scroll ONLY the table container. scrollIntoView() would scroll every
+  // scrollable ancestor including the page, which yanks the map out of view
+  // the moment you hover a segment.
+  const wrap=row.closest('.tablewrap');
+  if(!wrap) return;
+  const rr=row.getBoundingClientRect(), wr=wrap.getBoundingClientRect();
+  if(rr.top < wr.top) wrap.scrollTop -= (wr.top - rr.top);
+  else if(rr.bottom > wr.bottom) wrap.scrollTop += (rr.bottom - wr.bottom);
 }
 function cool(){
   svg.querySelectorAll('.seg').forEach(e=>e.classList.remove('dim'));
@@ -345,7 +393,7 @@ const bZoom=document.getElementById('bZoom'), bFull=document.getElementById('bFu
 function setMode(m){
   bZoom.setAttribute('aria-pressed',m==='zoom'); bFull.setAttribute('aria-pressed',m!=='zoom');
   cap.textContent = m==='zoom'
-    ? 'Grey dots are the 537 probe points. Hover any segment for its length.'
+    ? 'Grey dots are the __NPROBE__ probe points. Hover any segment for its length.'
     : 'Dashed outline = full Colaba-Dahisar sweep area; inner dashes = national park, skipped.';
   draw(m);
 }
@@ -362,6 +410,9 @@ HTML = (HTML.replace("__DATA__", js)
             .replace("__NLONG__", str(n_long))
             .replace("__PCTSHORT__", str(round(n_short / len(out_segs) * 100)))
             .replace("__GRIDTOTAL__", f"{grid_total:,}")
+            .replace("__NPROBE__", f"{len(done):,}")
+            .replace("__FRONTKM__", f"{front_km:.0f}")
+            .replace("__DAYSLEFT__", str(days_left))
             .replace("__PCT__", f"{pct:.1f}"))
 
 dest = SP / "sweep_map.html"

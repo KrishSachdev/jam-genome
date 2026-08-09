@@ -110,16 +110,23 @@ def collector_used_today():
         return 0, day
 
 
-def budget(state):
+def budget(state, solo=False):
+    """Requests this run may spend.
+
+    Normally a reserve is held back for every collector run still to come
+    today -- the collector's data is irreplaceable and always has priority.
+    With solo=True (collector paused) that reserve is released, which roughly
+    quadruples the sweep's daily allowance.
+    """
     used, day = collector_used_today()
     now = datetime.now(timezone.utc)
     mins_left = (24 * 60) - (now.hour * 60 + now.minute)
-    runs_left = math.ceil(mins_left / RUN_EVERY_MIN)
+    runs_left = 0 if solo else math.ceil(mins_left / RUN_EVERY_MIN)
     reserve = runs_left * POINTS_PER_RUN
     mine = state.get("used_by_day", {}).get(day, 0)
     avail = DAILY_CEILING - used - mine - reserve - SAFETY_MARGIN
     return max(0, avail), dict(day=day, collector=used, mine=mine,
-                               runs_left=runs_left, reserve=reserve)
+                               runs_left=runs_left, reserve=reserve, solo=solo)
 
 
 # ---------------------------------------------------------------- probe
@@ -155,6 +162,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan", action="store_true", help="show plan, make no calls")
     ap.add_argument("--max", type=int, default=None, help="cap probes this run")
+    ap.add_argument("--solo", action="store_true",
+                    help="collector is PAUSED -- release its reserve and use the full budget. "
+                         "Only pass this once the collector really is stopped, or the sweep "
+                         "will eat the requests the collector needs.")
     args = ap.parse_args()
 
     grid = build_grid()
@@ -162,7 +173,7 @@ def main():
     done = set(tuple(c) for c in st["done"])
     todo = [c for c in grid if c not in done]
 
-    avail, info = budget(st)
+    avail, info = budget(st, solo=args.solo)
     if args.max is not None:
         avail = min(avail, args.max)
 
@@ -173,7 +184,10 @@ def main():
     print(f"\nbudget for {info['day']}")
     print(f"  collector used   : {info['collector']:,}")
     print(f"  sweep used today : {info['mine']:,}")
-    print(f"  collector reserve: {info['reserve']:,}  ({info['runs_left']} runs left today)")
+    if info["solo"]:
+        print("  collector reserve: 0  (SOLO MODE - collector assumed paused)")
+    else:
+        print(f"  collector reserve: {info['reserve']:,}  ({info['runs_left']} runs left today)")
     print(f"  safety margin    : {SAFETY_MARGIN}")
     print(f"  -> allowance     : {avail:,}")
     if todo and avail:

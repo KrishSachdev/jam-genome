@@ -1,13 +1,6 @@
 name: collect
 
 on:
-  schedule:
-    # Attempt every 15 min: GitHub's shared cron skips most slots on this
-    # repo (observed ~25% fire rate on 2026-07-11), so dense attempts are
-    # needed to approach the intended 30-min cadence. poll.py enforces a
-    # hard daily request budget, so over-firing can never exceed the TomTom
-    # quota. Offsets avoid :00/:15/:30/:45 where the queue is busiest.
-    - cron: "2,17,32,47 * * * *"
   workflow_dispatch:
 
 concurrency:

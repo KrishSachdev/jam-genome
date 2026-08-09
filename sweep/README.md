@@ -22,6 +22,16 @@ This sweep enumerates every distinct TomTom segment across Greater Mumbai
 The output is the shortlist of segments worth monitoring, which should drive
 the next revision of `corridors.csv`.
 
+**Filter before selecting points.** "≤ 3 km" alone is not enough — the raw
+counts include degenerate segments. As of 2026-08-09, of 317 found:
+
+| filter | count |
+|---|---|
+| freeflow = 0 km/h | 1 — `speed_ratio` would divide by zero |
+| under 100 m | 8 — junction stubs, too small to monitor |
+| over 3 km | 75 — too coarse |
+| **clean candidates** (0.1–3 km, freeflow ≥ 10) | **234** |
+
 ## Scripts
 
 | file | what it does |
@@ -53,37 +63,30 @@ not. Every run recomputes its allowance live:
   = this run's allowance
 ```
 
-## Status as of 2026-08-07
+## Status
 
-**The sweep state was lost.** `sweep_state.json` lived only in a Claude
-session scratchpad, which Windows purged. Last known progress (31 Jul 2026):
+| date | probed | % | segments | usable ≤3 km |
+|---|---|---|---|---|
+| 2026-07-27 | 1,173 | 18.5% | 198 | 156 |
+| 2026-08-09 | 1,845 | 29.2% | 317 | 242 |
 
-- 1,273 of 6,327 grid cells probed (20.1%)
-- 220 distinct segments found, 176 usable (≤ 3 km)
-- ~1,273 API requests spent
+**Commit `sweep_state.json` after every run.** On 2026-08-07 the original
+state was lost because it lived only in a Claude session scratchpad, which
+Windows purged (~1,273 probes). It was recovered from the published map
+artifact via `recover_from_map.py` — that worked only because the map embeds
+the full payload. Committing the state is the habit that makes recovery
+unnecessary. It reaches a few MB by the end; if that becomes a problem, split
+the segment geometry into a separate file or gzip it.
 
-Unless that file is recovered, `sweep.py` restarts from cell 0. Nothing is
-permanently damaged — it costs roughly two more budget-days to catch up.
+## History / fixes applied
 
-**Commit `sweep_state.json` to this repo after every run.** That is the whole
-reason the previous state was lost, and it is the one habit that prevents it
-happening again. It grows to ~3 MB; if that becomes a problem, split the
-segment geometry into a separate file written once at the end, or gzip it.
-
-## Known gaps in these recovered copies
-
-`build_sweep_map.py` is the **day-1** version. Three later improvements were
-made in the original session and are not in this copy:
-
-1. **geometry simplification** (25 m tolerance) — halved the payload from
-   22,210 to 10,891 vertices with no visible change at map scale. Without it
-   the page passes 1 MB around day 6.
-2. **self-updating copy** — headline, distance, day count and progress bar
-   should read from the sweep state; this copy still hardcodes
-   `537 probes` and `day 1 of ~10`.
-3. minor: `el.style.stroke` / `el.style.strokeWidth` instead of `setAttribute`
-   (already applied here).
-
-One fix **is** applied here: in the original, a failed probe was still marked
-done, so network errors punched permanent invisible holes in the grid. In this
-copy a cell is only recorded when the probe actually succeeds.
+- **failed probes are no longer marked done.** In the original, a network
+  outage still advanced the cursor, punching permanent invisible holes in the
+  grid. A cell is now recorded only when the probe succeeds, so failures are
+  retried on the next run.
+- **geometry simplification** (Ramer–Douglas–Peucker, 25 m) — 28,017 → 2,181
+  vertices, verified max deviation 24.90 m, i.e. invisible at map scale.
+  Without it the page would pass 1 MB well before the sweep completes.
+- **all page copy derives from the state file** — headline, frontier distance,
+  probe count, progress bar and days-remaining. Nothing goes stale between
+  runs.

@@ -5,3 +5,7 @@ __pycache__/
 .venv/
 analysis/figures/
 analysis/outputs/
+# build outputs of the sweep map (regenerate: python sweep/build_sweep_map.py)
+sweep/sweep_map.html
+sweep/segment_map.html
+sweep/sweep_map_saved*
