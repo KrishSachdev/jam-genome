@@ -27,10 +27,12 @@ API_URL = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10
 MAX_TRIES = 3
 INTER_POINT_SLEEP = 0.25  # TomTom free tier allows ~5 QPS; stay far below it
 
-# Hard daily budget guard (TomTom free tier: 2,500 req/day). The cron
-# attempts every 15 min because GitHub skips most slots; if it ever fires
-# them all, this cap (66 runs x 36 points = 2,376) keeps us under quota.
-MAX_LINES_PER_DAY = 2376
+# Hard daily budget guard (TomTom free tier: 2,500 req/day).
+# The intended load is 50 points x 48 runs = 2,400/day, so the cap must sit
+# ABOVE that or the last run of every day is refused -- while still leaving
+# headroom under the 2,500 ceiling for a retry or a clock-skewed extra run.
+# If the point count changes, re-check this: it must exceed points x 48.
+MAX_LINES_PER_DAY = 2450
 
 # Spacing guard: the cron-job.org pinger provides the reliable 30-min
 # backbone, and GitHub's own cron often fires a duplicate run minutes later

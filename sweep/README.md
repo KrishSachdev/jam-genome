@@ -23,14 +23,18 @@ The output is the shortlist of segments worth monitoring, which should drive
 the next revision of `corridors.csv`.
 
 **Filter before selecting points.** "≤ 3 km" alone is not enough — the raw
-counts include degenerate segments. As of 2026-08-09, of 317 found:
+counts include degenerate segments. Final tally of all 870:
 
 | filter | count |
 |---|---|
 | freeflow = 0 km/h | 1 — `speed_ratio` would divide by zero |
-| under 100 m | 8 — junction stubs, too small to monitor |
-| over 3 km | 75 — too coarse |
-| **clean candidates** (0.1–3 km, freeflow ≥ 10) | **234** |
+| under 100 m | 13 — junction stubs, too small to monitor |
+| over 3 km | 164 — too coarse |
+| **clean candidates** (0.1–3 km, freeflow ≥ 10) | **692** |
+
+By road class: FRC4 488, FRC2 82, FRC1 50, FRC3 31, FRC6 18, FRC7 16, FRC5 7.
+That is ~19 usable candidates for every one of the current 36 monitoring
+points — ample room to re-site the 17 points that record no congestion.
 
 ## Scripts
 
@@ -65,10 +69,18 @@ not. Every run recomputes its allowance live:
 
 ## Status
 
+**COMPLETE — 2026-08-11.** All 6,327 land cells probed, 870 distinct segments found.
+
 | date | probed | % | segments | usable ≤3 km |
 |---|---|---|---|---|
 | 2026-07-27 | 1,173 | 18.5% | 198 | 156 |
-| 2026-08-09 | 1,845 | 29.2% | 317 | 242 |
+| 2026-08-09 | 2,169 | 34.3% | 383 | 292 |
+| 2026-08-10 | 4,567 | 72.2% | 671 | 533 |
+| **2026-08-11** | **6,327** | **100%** | **870** | **706** |
+
+Days 2–4 ran in `--solo` mode with the collector deliberately paused
+(2026-08-09 → 2026-08-11), which is why they reach ~2,400/day instead of ~670.
+**The collector must be re-enabled once a solo sweep finishes.**
 
 **Commit `sweep_state.json` after every run.** On 2026-08-07 the original
 state was lost because it lived only in a Claude session scratchpad, which

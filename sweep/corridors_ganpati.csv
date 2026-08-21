@@ -23,7 +23,7 @@ marine_drive_approach,Marine Drive (approach),18.93082,72.82623,VISARJAN,event,i
 dadar_chowpatty,Dadar Chowpatty,19.02183,72.84239,VISARJAN,event,"immersion 2026 Ganeshotsav [verified c8eea3 0.79km FRC4 ff19, moved 415m]"
 juhu_beach,Juhu Beach,19.09032,72.84089,VISARJAN,event,immersion 2026 Ganeshotsav [seg 89fc91 1.76km FRC4]
 versova_beach,Versova Beach,19.13985,72.80936,VISARJAN,event,immersion 2026 Ganeshotsav [seg 4b43a0 5.79km FRC7]
-powai_lake,Powai Lake,19.11818,72.90729,VISARJAN,event,"immersion 2026 Ganeshotsav [verified 1.28km FRC4 ff20, 411m from lake]"
+powai_lake,Powai Lake,19.13259,72.89672,VISARJAN,event,"immersion 2026 Ganeshotsav [verified 41f0ba 0.15km FRC4 ff13, moved 78m]"
 bandra_bandstand,Bandra Bandstand,19.05880,72.83409,VISARJAN,event,immersion 2026 Ganeshotsav [seg 449569 0.39km FRC4]
 ctl_mulund_eeh,CONTROL Mulund EEH,19.17734,72.94202,CONTROL,event,control 2026 Ganeshotsav [seg 69bd8b 2.04km FRC4]
 ctl_borivali_weh,CONTROL Borivali WEH,19.22159,72.86548,CONTROL,event,"control 2026 Ganeshotsav [verified ae7ad9 0.71km FRC4 ff25, moved 361m]"
@@ -31,21 +31,3 @@ ctl_kandivali,CONTROL Kandivali,19.20599,72.86605,CONTROL,event,control 2026 Gan
 ctl_malad,CONTROL Malad,19.18011,72.85901,CONTROL,event,control 2026 Ganeshotsav [seg 5cbbb5 1.63km FRC4]
 ctl_ghatkopar,CONTROL Ghatkopar,19.07444,72.91211,CONTROL,event,control 2026 Ganeshotsav [seg ebd27d 1.38km FRC1]
 ctl_vikhroli,CONTROL Vikhroli,19.11562,72.91660,CONTROL,event,"control 2026 Ganeshotsav [verified 3a2cb5 2.78km FRC4 ff23, moved 1508m]"
-kalanagar,Kalanagar Junction,19.05809,72.85049,CHOKE,event,"top chokepoint, blind until now [verified 44236f 0.68km FRC4 ff22, 154m from geocode]"
-sakinaka,Sakinaka Junction,19.09551,72.88363,CHOKE,event,"famous chokepoint [verified 3406f8 2.77km FRC4 ff22, 720m from geocode]"
-amar_mahal,Amar Mahal Junction,19.06799,72.90266,CHOKE,event,"famous chokepoint [verified 2df91b 0.58km FRC4 ff28, 373m from geocode]"
-mahim_junction,Mahim Junction,19.04511,72.84073,CHOKE,event,"WEH south end [verified 9381ee 0.37km FRC2 ff19, 225m from geocode]"
-andheri_subway,Andheri Subway,19.11188,72.85873,CHOKE,event,"famous chokepoint [verified 6d8791 0.47km FRC4 ff15, 407m from geocode]"
-byculla_ba_road,Byculla,18.98037,72.83889,GANPATI,event,"Dr B.A. Rd procession route [verified 47686d 0.96km FRC4 ff23, 463m from geocode]"
-acharya_donde,Acharya Donde Marg,19.00530,72.84041,GANPATI,event,"named in police diversions [verified f5cbd3 0.72km FRC4 ff22, 88m from geocode]"
-nagpada,Nagpada (Tardeo area),18.96905,72.81850,GANPATI,event,"procession area - geocoded to Nagpada [verified 829c10 2.87km FRC4 ff19, 525m from geocode]"
-worli_naka,Worli Naka,19.00635,72.81824,GANPATI,event,"procession corridor [verified 6844d0 1.75km FRC4 ff32, 589m from geocode]"
-wadala,Wadala,19.02911,72.88782,GANPATI,event,"central processions [verified 88dc39 0.10km FRC4 ff21, 465m from geocode]"
-kalbadevi,Kalbadevi (Chowpatty approach),18.95147,72.82303,VISARJAN,event,"Girgaon Chowpatty approach via Kalbadevi [verified 615315 2.11km FRC4 ff17, 743m from geocode]"
-opera_house,Opera House,18.95686,72.81304,VISARJAN,event,"Chowpatty approach [verified 326c7b 0.39km FRC1 ff24, 221m from geocode]"
-atal_setu,Atal Setu (Trans Harbour Link),18.99588,72.85415,CONTROL,event,"harbour bridge - no procession route, strong control [verified 2f8778 0.64km FRC2 ff58, 95m from geocode]"
-ctl_goregaon,Goregaon East,19.16800,72.85850,CONTROL,event,"control [verified e5d320 1.87km FRC4 ff21, 695m from geocode]"
-ctl_jogeshwari,Jogeshwari West,19.14426,72.84075,CONTROL,event,"control [verified 397bfb 0.66km FRC2 ff17, 419m from geocode]"
-ctl_bhandup,Bhandup West,19.15362,72.94363,CONTROL,event,"control [verified d97d22 1.85km FRC4 ff18, 715m from geocode]"
-ctl_bhandup_quarry,"Quarry Road, Bhandup West",19.14559,72.92862,CONTROL,event,"control (geocoded to Bhandup, not Kanjurmarg) [verified c1cb1d 2.18km FRC4 ff17, 1038m from geocode]"
-ctl_santacruz,Santacruz East,19.07428,72.85292,CONTROL,event,"control [verified 407c56 1.52km FRC2 ff32, 630m from geocode]"

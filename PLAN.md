@@ -42,7 +42,63 @@
 - **Phase 2 result on 29 days (10 Jul – 7 Aug 2026, 46,709 point-slots, 0 errors):** league table led by `weh_kherwadi` (2.7 congested h/day), `eeh_sion` (2.1), `eeh_vikhroli` (1.9), `eeh_teen_hath` (1.2). Threshold sweep 0.40→0.70 gives 21→1,089 episodes; **0.50 chosen** (129 episodes, 12 points — selective enough to be meaningful, loose enough to have signal; 0.40 is too sparse, 0.65+ flags nearly every point). Distinct signatures: Kherwadi/Powai are *midday-and-evening weekday* jams, Vikhroli is a sharp *evening-only* crater, Teen Hath is congested weekends too.
 - This alone is publishable content: "Mumbai's slowest corridors, measured every 30 minutes for a month."
 
+## Phase 2.5 — Point-set revision (2026-08-11, BLOCKING everything downstream)
+
+**Why this exists:** 17 of the original 36 points recorded *zero* congestion in
+29 days because they sit on TomTom segments 13–20 km long. See
+[FINDINGS.md](FINDINGS.md) §1–2 — this is the single most important constraint
+on the project and it invalidates the Phase 3 ranking until fixed.
+
+- [x] Citywide segment sweep (`sweep/`) — complete 2026-08-11, all 6,327 cells,
+      **870 segments, 692 clean candidates** (0.1–3 km, freeflow ≥ 10).
+- [x] New point set assembled: `sweep/corridors_ganpati.csv` — **32 points, all
+      on distinct segments**, 1,536 req/day. 9 proven performers kept verbatim
+      (ids preserved so existing data stays joinable) + 16 event points + 6
+      controls. Headroom for ~18 more points if wanted.
+- [ ] Review names, copy over `corridors.csv`, run `collector/validate_points.py`.
+- [ ] Re-enable collection (cron-job.org job `jam-genome collect`).
+
+**Design rule going forward: one point per distinct TomTom segment.** Two
+points on one segment return the identical number.
+
+## Phase 2.7 — Ganeshotsav natural experiment (Aug–Sept 2026) — PRIMARY
+
+Promoted from a Phase 5 stretch idea to a headline deliverable, because the
+2026 timing lines up: baseline collection now, festival in ~5 weeks.
+
+| date | phase |
+|---|---|
+| 2026-08-12 → 09-13 | **baseline** (~33 days) |
+| **2026-09-14** (Mon) | Ganesh Chaturthi — pandals open, 10 days of queues |
+| 09-15, 17, 18, 20 | intermediate immersion days (1½, 3, 5, 7-day idols) |
+| **2026-09-25** (Fri) | **Anant Chaturdashi** — main visarjan, the peak |
+
+Design is a repeated-measures before/during/after with controls:
+
+- **Event points** — Lalbaug/Parel pandal cluster, Hindmata, Parel TT,
+  Kalachowki, G.D. Ambekar, S.K. Bole, GSB King's Circle, Andhericha Raja,
+  Khetwadi.
+- **Visarjan points** — Girgaon Chowpatty (Lalbaugcha Raja's destination),
+  Marine Drive approach, Dadar Chowpatty, Juhu, Versova, Powai Lake, Bandra
+  Bandstand.
+- **Controls** — Mulund, Borivali, Kandivali, Malad, Ghatkopar, Vikhroli. Far
+  from any pandal or immersion route. **Without these the result is not
+  defensible** — a reviewer will say September was simply busier or wetter.
+- Mumbai Traffic Police closed 84 roads and made 54 one-way in 2025, so the
+  effect should be enormous and unambiguous.
+- Note the reversal: normally free-flowing roads (Marine Drive, Girgaon) are
+  the *best* signal here — maximum contrast, no baseline congestion to muddy it.
+
+Analysis: episode counts and congestion-hours per point per day, baseline vs
+festival vs each immersion day, controls differenced out. The intermediate
+immersion days give repeated measures rather than one event.
+
 ## Phase 3 — Propagation mining (the core, weeks 5–8)
+
+> **Scope correction (2026-08-11):** propagation *along* WEH/EEH cannot be
+> measured — each is one segment, so every point on it reports the same value.
+> Propagation is observable on the **arterial and junction network** and
+> *between* corridors. Reframe the claim accordingly; the novelty is unchanged.
 
 Methods, simplest-first (references in CONTEXT.md):
 1. **Episode extraction:** onset/offset timestamps per point.
@@ -61,7 +117,7 @@ Methods, simplest-first (references in CONTEXT.md):
 
 ## Phase 5 — Stretch ideas (post-launch)
 
-- **Event shockwaves overlay:** Ganesh Chaturthi processions (Sept 2026) and Wankhede match days observed through the propagation graph — was the runner-up project idea and composes perfectly with this one.
+- ~~Event shockwaves overlay: Ganesh Chaturthi~~ — **promoted to Phase 2.7 above.** Wankhede match days remain a stretch.
 - Nowcasting: predict downstream congestion 30–60 min ahead from upstream state (gradient-boosting baseline → temporal GNN if justified).
 - Expand point set / second city comparison.
 
@@ -75,10 +131,17 @@ Methods, simplest-first (references in CONTEXT.md):
 
 ## Timeline snapshot
 
-| When | What |
-|------|------|
-| Weekend 1 | TomTom key, corridors.csv, collector live on GitHub Actions |
-| Weeks 2–5 | Passive collection; EDA notebook; fix bad points |
-| Weeks 5–8 | Propagation mining + ranking |
-| Weeks 8–10 | Dashboard, writeup, portfolio link |
-| Ongoing | Collector keeps running; stretch ideas |
+| When | What | Status |
+|------|------|--------|
+| 2026-07-09 | TomTom key, corridors.csv, collector live | done |
+| 07-10 → 08-07 | 30 days collected, 48k records, 0 errors; Phase 2 EDA | done |
+| 07-26 → 08-11 | Segment-resolution discovery + citywide sweep | done |
+| **08-11** | **Point-set revision (Phase 2.5)** | **in progress** |
+| 08-12 → 09-13 | Baseline collection for the festival experiment | next |
+| 09-14 → 09-25 | **Ganeshotsav + visarjan** — irreplaceable window | |
+| 09-26 → Oct | Festival analysis, then propagation mining | |
+| Oct–Nov | Dashboard, writeup, portfolio link | |
+
+**Collection status:** paused 2026-08-09 deliberately (whole quota went to the
+sweep). Resume as soon as the new `corridors.csv` is in place — baseline days
+lost now are baseline days that cannot be recovered before 14 Sept.

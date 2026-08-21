@@ -1,0 +1,693 @@
+segment_id,lat,lon,km,frc,freeflow_kmph,probe_hits,zone
+afa44072,19.13257,72.89714,0.144,FRC4,13,1,Andheri-Jogeshwari-Powai
+41f0baf1,19.13258,72.89682,0.15,FRC4,12,3,Andheri-Jogeshwari-Powai
+8d615081,19.12690,72.92159,0.155,FRC2,31,1,Andheri-Jogeshwari-Powai
+e7a6f08f,19.15128,72.85615,0.233,FRC3,21,1,Andheri-Jogeshwari-Powai
+edae100a,19.14431,72.82932,0.248,FRC4,19,1,Andheri-Jogeshwari-Powai
+e249ff72,19.12534,72.89192,0.256,FRC4,23,1,Andheri-Jogeshwari-Powai
+c5a837c4,19.15309,72.85290,0.256,FRC4,20,1,Andheri-Jogeshwari-Powai
+00a723c6,19.12736,72.91850,0.26,FRC2,24,5,Andheri-Jogeshwari-Powai
+2c4e32cc,19.13941,72.85471,0.385,FRC4,14,1,Andheri-Jogeshwari-Powai
+3cd45dfc,19.14507,72.82896,0.389,FRC4,28,2,Andheri-Jogeshwari-Powai
+f1f88e5a,19.12587,72.93918,0.391,FRC3,32,2,Andheri-Jogeshwari-Powai
+d4310f0b,19.12799,72.82172,0.433,FRC4,20,1,Andheri-Jogeshwari-Powai
+563ac024,19.11736,72.85066,0.455,FRC4,21,1,Andheri-Jogeshwari-Powai
+411227af,19.12497,72.89531,0.455,FRC2,26,3,Andheri-Jogeshwari-Powai
+78557d2b,19.12051,72.90030,0.458,FRC2,30,1,Andheri-Jogeshwari-Powai
+9e9796a3,19.12509,72.89549,0.458,FRC2,33,5,Andheri-Jogeshwari-Powai
+5d41584f,19.13022,72.86396,0.461,FRC4,20,1,Andheri-Jogeshwari-Powai
+f487304a,19.11171,72.85301,0.526,FRC4,22,2,Andheri-Jogeshwari-Powai
+e97395bb,19.12567,72.84458,0.534,FRC4,17,1,Andheri-Jogeshwari-Powai
+823bf880,19.11609,72.84322,0.551,FRC2,32,1,Andheri-Jogeshwari-Powai
+d3580049,19.11470,72.85148,0.575,FRC4,46,1,Andheri-Jogeshwari-Powai
+0348708f,19.11422,72.83921,0.576,FRC4,17,1,Andheri-Jogeshwari-Powai
+038dbe4c,19.14599,72.83391,0.581,FRC2,22,1,Andheri-Jogeshwari-Powai
+de806fbb,19.14403,72.82905,0.583,FRC4,21,1,Andheri-Jogeshwari-Powai
+1ef76192,19.12133,72.91268,0.6,FRC4,17,1,Andheri-Jogeshwari-Powai
+0d40257a,19.12117,72.91268,0.6,FRC4,20,3,Andheri-Jogeshwari-Powai
+25342f62,19.12588,72.84438,0.611,FRC4,20,1,Andheri-Jogeshwari-Powai
+5200e735,19.11332,72.82827,0.618,FRC2,25,4,Andheri-Jogeshwari-Powai
+f2a83e10,19.12501,72.83274,0.652,FRC4,17,1,Andheri-Jogeshwari-Powai
+b3044ec9,19.13544,72.83490,0.656,FRC4,17,1,Andheri-Jogeshwari-Powai
+397bfb80,19.14391,72.84047,0.656,FRC2,17,2,Andheri-Jogeshwari-Powai
+0cf12a86,19.13544,72.83490,0.658,FRC4,15,1,Andheri-Jogeshwari-Powai
+b410e053,19.12502,72.83276,0.665,FRC4,19,3,Andheri-Jogeshwari-Powai
+79124ee3,19.14565,72.83667,0.678,FRC2,20,2,Andheri-Jogeshwari-Powai
+bcb37771,19.14942,72.83152,0.678,FRC4,20,2,Andheri-Jogeshwari-Powai
+4809ff4e,19.14935,72.83141,0.68,FRC4,24,1,Andheri-Jogeshwari-Powai
+84e7f051,19.12762,72.92000,0.682,FRC2,27,4,Andheri-Jogeshwari-Powai
+19833a13,19.12321,72.87874,0.687,FRC4,24,1,Andheri-Jogeshwari-Powai
+be1e91bb,19.12311,72.87865,0.7,FRC4,24,2,Andheri-Jogeshwari-Powai
+82b06e9e,19.12228,72.86733,0.741,FRC4,21,1,Andheri-Jogeshwari-Powai
+63d33d17,19.12227,72.86745,0.749,FRC4,19,1,Andheri-Jogeshwari-Powai
+03826929,19.14017,72.82380,0.799,FRC4,25,2,Andheri-Jogeshwari-Powai
+09a3c471,19.12926,72.86040,0.815,FRC4,18,4,Andheri-Jogeshwari-Powai
+53d5b0ab,19.13804,72.84074,0.815,FRC4,18,2,Andheri-Jogeshwari-Powai
+460419c8,19.12936,72.86048,0.817,FRC4,17,1,Andheri-Jogeshwari-Powai
+a85e90d9,19.13804,72.84074,0.817,FRC4,20,1,Andheri-Jogeshwari-Powai
+f546b6d3,19.11159,72.85895,0.83,FRC4,18,3,Andheri-Jogeshwari-Powai
+075e666d,19.14091,72.82238,0.838,FRC4,26,5,Andheri-Jogeshwari-Powai
+d9c03d71,19.15450,72.84369,0.844,FRC4,20,3,Andheri-Jogeshwari-Powai
+7b496158,19.15469,72.84364,0.846,FRC4,21,1,Andheri-Jogeshwari-Powai
+b3ec9c7e,19.12020,72.90105,0.85,FRC2,30,2,Andheri-Jogeshwari-Powai
+052c07bc,19.12843,72.86512,0.85,FRC4,23,1,Andheri-Jogeshwari-Powai
+0aa3f144,19.12839,72.86516,0.85,FRC4,23,1,Andheri-Jogeshwari-Powai
+7bde061b,19.14591,72.85353,0.875,FRC3,14,4,Andheri-Jogeshwari-Powai
+bfc3fbb0,19.12761,72.84284,0.922,FRC4,20,4,Andheri-Jogeshwari-Powai
+ed01eb33,19.12777,72.84235,0.939,FRC4,19,2,Andheri-Jogeshwari-Powai
+ecc62ef2,19.12304,72.84946,0.944,FRC4,20,2,Andheri-Jogeshwari-Powai
+f114b9c5,19.12307,72.84948,0.945,FRC4,19,1,Andheri-Jogeshwari-Powai
+d1f22c4a,19.12523,72.92641,0.965,FRC2,23,4,Andheri-Jogeshwari-Powai
+0fa135b2,19.15440,72.83888,0.978,FRC4,23,4,Andheri-Jogeshwari-Powai
+3258d890,19.15414,72.83916,0.98,FRC4,21,1,Andheri-Jogeshwari-Powai
+2ee7799b,19.12095,72.87619,0.996,FRC4,28,3,Andheri-Jogeshwari-Powai
+d75d703b,19.12102,72.87604,1.008,FRC4,22,2,Andheri-Jogeshwari-Powai
+e8033122,19.15438,72.85669,1.111,FRC3,25,1,Andheri-Jogeshwari-Powai
+28654e3d,19.14798,72.82909,1.12,FRC6,21,1,Andheri-Jogeshwari-Powai
+b847a52b,19.15908,72.84077,1.137,FRC4,21,3,Andheri-Jogeshwari-Powai
+e551523d,19.15916,72.84072,1.137,FRC4,22,6,Andheri-Jogeshwari-Powai
+74af1e7d,19.13115,72.87239,1.139,FRC4,20,2,Andheri-Jogeshwari-Powai
+6ad1d389,19.13115,72.87239,1.14,FRC4,19,1,Andheri-Jogeshwari-Powai
+2a8021bb,19.13399,72.86583,1.15,FRC4,18,4,Andheri-Jogeshwari-Powai
+9ac0cfd3,19.15293,72.85068,1.152,FRC3,29,2,Andheri-Jogeshwari-Powai
+2db5f04e,19.13244,72.85487,1.194,FRC4,25,5,Andheri-Jogeshwari-Powai
+c2f10a21,19.14634,72.82435,1.22,FRC4,24,16,Andheri-Jogeshwari-Powai
+3b1393ee,19.14146,72.83221,1.277,FRC4,19,1,Andheri-Jogeshwari-Powai
+e0de64dc,19.14684,72.82951,1.278,FRC4,21,8,Andheri-Jogeshwari-Powai
+5117d262,19.14588,72.82375,1.28,FRC6,24,4,Andheri-Jogeshwari-Powai
+e65ea509,19.14303,72.85519,1.293,FRC3,26,1,Andheri-Jogeshwari-Powai
+3299cea2,19.14120,72.83143,1.295,FRC4,18,5,Andheri-Jogeshwari-Powai
+baad2d82,19.13256,72.83177,1.31,FRC4,18,2,Andheri-Jogeshwari-Powai
+19f3d4e8,19.13260,72.83179,1.315,FRC4,18,5,Andheri-Jogeshwari-Powai
+2391bb73,19.14472,72.83811,1.355,FRC2,18,4,Andheri-Jogeshwari-Powai
+32585fbe,19.12543,72.85959,1.504,FRC4,19,6,Andheri-Jogeshwari-Powai
+5fc8f912,19.11257,72.85463,1.571,FRC4,22,3,Andheri-Jogeshwari-Powai
+a970f06e,19.13263,72.86510,1.61,FRC4,19,3,Andheri-Jogeshwari-Powai
+da6a9cd3,19.13275,72.85547,1.683,FRC4,26,5,Andheri-Jogeshwari-Powai
+35823ee5,19.15174,72.82927,1.785,FRC4,25,30,Andheri-Jogeshwari-Powai
+8a347b63,19.15143,72.82937,1.792,FRC4,25,9,Andheri-Jogeshwari-Powai
+dbbe576f,19.13173,72.82550,1.797,FRC4,21,5,Andheri-Jogeshwari-Powai
+4f418450,19.13518,72.83735,1.81,FRC4,18,4,Andheri-Jogeshwari-Powai
+a215d444,19.13286,72.82543,1.811,FRC4,20,9,Andheri-Jogeshwari-Powai
+61d9a6ac,19.14950,72.85017,1.812,FRC3,15,1,Andheri-Jogeshwari-Powai
+da60f811,19.13595,72.83737,1.816,FRC6,19,5,Andheri-Jogeshwari-Powai
+8058a9ac,19.13536,72.81517,1.833,FRC4,20,6,Andheri-Jogeshwari-Powai
+cf94ac55,19.13569,72.81521,1.843,FRC4,21,16,Andheri-Jogeshwari-Powai
+d97d222d,19.15519,72.94278,1.856,FRC4,17,5,Andheri-Jogeshwari-Powai
+9208aee5,19.15504,72.94262,1.87,FRC4,18,3,Andheri-Jogeshwari-Powai
+5c8d5f83,19.15395,72.85636,1.878,FRC3,21,5,Andheri-Jogeshwari-Powai
+6e76fb1d,19.12400,72.82315,1.986,FRC4,22,17,Andheri-Jogeshwari-Powai
+c41294b8,19.12432,72.82306,1.998,FRC4,22,6,Andheri-Jogeshwari-Powai
+927f5779,19.14611,72.85604,2.013,FRC3,24,16,Andheri-Jogeshwari-Powai
+8c8530e1,19.15529,72.85392,2.069,FRC4,28,2,Andheri-Jogeshwari-Powai
+7c534c76,19.15775,72.85124,2.134,FRC7,17,2,Andheri-Jogeshwari-Powai
+81ff53cd,19.15766,72.85126,2.14,FRC4,18,8,Andheri-Jogeshwari-Powai
+c1cb1d83,19.14544,72.93048,2.177,FRC4,17,5,Andheri-Jogeshwari-Powai
+08256385,19.14549,72.93054,2.186,FRC4,17,34,Andheri-Jogeshwari-Powai
+0d3fcded,19.12177,72.87048,2.285,FRC6,25,2,Andheri-Jogeshwari-Powai
+c1f1db60,19.11240,72.83361,2.707,FRC2,22,11,Andheri-Jogeshwari-Powai
+8974cf7a,19.13947,72.94714,2.981,FRC4,37,21,Andheri-Jogeshwari-Powai
+5a360cda,19.07052,72.87688,0.233,FRC4,15,1,Bandra-Khar-Santacruz + BKC
+486d3d39,19.10500,72.83061,0.29,FRC3,12,1,Bandra-Khar-Santacruz + BKC
+4fdd8bc9,19.10270,72.85532,0.298,FRC2,37,1,Bandra-Khar-Santacruz + BKC
+892f8518,19.10522,72.83067,0.345,FRC3,27,1,Bandra-Khar-Santacruz + BKC
+6d879107,19.10997,72.85886,0.476,FRC4,16,1,Bandra-Khar-Santacruz + BKC
+693dd806,19.06112,72.84643,0.507,FRC2,32,1,Bandra-Khar-Santacruz + BKC
+50662c7d,19.06087,72.85380,0.513,FRC4,26,2,Bandra-Khar-Santacruz + BKC
+00e3a6cd,19.07875,72.83155,0.549,FRC4,13,1,Bandra-Khar-Santacruz + BKC
+17d9a412,19.07873,72.83177,0.56,FRC4,13,2,Bandra-Khar-Santacruz + BKC
+8cc15a13,19.08717,72.83455,0.6,FRC4,17,1,Bandra-Khar-Santacruz + BKC
+f5efefdd,19.08761,72.83444,0.605,FRC4,22,8,Bandra-Khar-Santacruz + BKC
+3d75e9ea,19.07573,72.87698,0.662,FRC4,16,1,Bandra-Khar-Santacruz + BKC
+15013953,19.07146,72.87915,0.729,FRC4,16,1,Bandra-Khar-Santacruz + BKC
+b32b02d6,19.07617,72.87715,0.733,FRC4,20,1,Bandra-Khar-Santacruz + BKC
+d93bc192,19.06204,72.83419,0.832,FRC4,14,2,Bandra-Khar-Santacruz + BKC
+b7c4da0a,19.06196,72.83397,0.906,FRC4,13,2,Bandra-Khar-Santacruz + BKC
+9f158cc6,19.10658,72.86861,1.05,FRC4,20,3,Bandra-Khar-Santacruz + BKC
+45c45ce6,19.10658,72.86861,1.05,FRC6,20,1,Bandra-Khar-Santacruz + BKC
+0efdc927,19.07500,72.87950,1.06,FRC4,12,1,Bandra-Khar-Santacruz + BKC
+64371634,19.10826,72.86606,1.12,FRC4,21,2,Bandra-Khar-Santacruz + BKC
+74274e2d,19.06009,72.86082,1.125,FRC2,27,3,Bandra-Khar-Santacruz + BKC
+77b66e43,19.10825,72.86603,1.128,FRC4,20,3,Bandra-Khar-Santacruz + BKC
+8fa8caa8,19.07193,72.87906,1.248,FRC4,14,3,Bandra-Khar-Santacruz + BKC
+86d88367,19.06666,72.85632,1.253,FRC4,24,4,Bandra-Khar-Santacruz + BKC
+27ab7bf5,19.07381,72.87237,1.272,FRC4,42,2,Bandra-Khar-Santacruz + BKC
+e21738e5,19.07971,72.84648,1.288,FRC2,45,3,Bandra-Khar-Santacruz + BKC
+47edf1c5,19.07906,72.82909,1.333,FRC7,12,2,Bandra-Khar-Santacruz + BKC
+b3fb4728,19.06889,72.84846,1.393,FRC4,23,4,Bandra-Khar-Santacruz + BKC
+77af97f7,19.07851,72.84658,1.394,FRC2,26,2,Bandra-Khar-Santacruz + BKC
+e8c7bdd4,19.10321,72.83371,1.4,FRC4,21,3,Bandra-Khar-Santacruz + BKC
+b47ffe9e,19.07814,72.84690,1.416,FRC2,28,3,Bandra-Khar-Santacruz + BKC
+b0248300,19.07434,72.85252,1.517,FRC4,30,7,Bandra-Khar-Santacruz + BKC
+407c5668,19.07462,72.85315,1.524,FRC2,31,6,Bandra-Khar-Santacruz + BKC
+83cfd3f3,19.08074,72.85041,1.68,FRC4,23,6,Bandra-Khar-Santacruz + BKC
+9fbef4fb,19.06906,72.83605,1.696,FRC4,15,3,Bandra-Khar-Santacruz + BKC
+89fc9104,19.09061,72.84077,1.763,FRC4,23,3,Bandra-Khar-Santacruz + BKC
+a5d4a7ee,19.10224,72.86169,1.907,FRC2,52,19,Bandra-Khar-Santacruz + BKC
+0ac6fabc,19.08207,72.83040,1.975,FRC6,15,1,Bandra-Khar-Santacruz + BKC
+63f820b3,19.07900,72.86929,1.978,FRC4,21,16,Bandra-Khar-Santacruz + BKC
+1c386535,19.07578,72.83720,2.116,FRC4,17,2,Bandra-Khar-Santacruz + BKC
+a597f643,19.06720,72.85337,2.169,FRC4,22,5,Bandra-Khar-Santacruz + BKC
+fd23a021,19.07369,72.86522,2.265,FRC4,27,5,Bandra-Khar-Santacruz + BKC
+18e9e8d5,19.08200,72.86242,2.333,FRC4,25,6,Bandra-Khar-Santacruz + BKC
+ead13699,19.07350,72.86250,2.409,FRC2,49,2,Bandra-Khar-Santacruz + BKC
+39e88dc1,19.06649,72.82891,2.418,FRC6,17,9,Bandra-Khar-Santacruz + BKC
+199e1194,19.06649,72.82891,2.418,FRC4,17,2,Bandra-Khar-Santacruz + BKC
+ef55dcf5,19.07198,72.83456,2.837,FRC2,23,5,Bandra-Khar-Santacruz + BKC
+6ed7885a,19.07248,72.83445,2.849,FRC2,23,8,Bandra-Khar-Santacruz + BKC
+ed649880,19.06554,72.86763,2.932,FRC6,26,5,Bandra-Khar-Santacruz + BKC
+47373791,19.08846,72.84740,2.973,FRC4,24,12,Bandra-Khar-Santacruz + BKC
+64af1ca6,19.17764,72.95174,0.362,FRC4,15,2,Bhandup-Mulund-Thane
+3b52645e,19.16432,72.94501,0.414,FRC4,21,1,Bhandup-Mulund-Thane
+7a1af3c3,19.19426,72.95202,0.453,FRC4,24,1,Bhandup-Mulund-Thane
+4bc21fbf,19.20556,72.95584,0.465,FRC4,18,1,Bhandup-Mulund-Thane
+7f83cc63,19.17703,72.95095,0.467,FRC4,20,1,Bhandup-Mulund-Thane
+a52d1e22,19.20555,72.95576,0.472,FRC4,17,1,Bhandup-Mulund-Thane
+d3151995,19.17353,72.95346,0.533,FRC4,14,1,Bhandup-Mulund-Thane
+9d562558,19.17353,72.95346,0.534,FRC4,13,2,Bhandup-Mulund-Thane
+663cc9d9,19.17467,72.95648,0.64,FRC4,18,1,Bhandup-Mulund-Thane
+7f3ea6f4,19.16815,72.95445,0.687,FRC4,24,1,Bhandup-Mulund-Thane
+2dd5c4ec,19.16711,72.95712,0.7,FRC4,20,2,Bhandup-Mulund-Thane
+7d474b5a,19.16554,72.93416,0.821,FRC4,15,2,Bhandup-Mulund-Thane
+81546fce,19.18634,72.95924,0.9,FRC2,24,2,Bhandup-Mulund-Thane
+ff043d2b,19.17853,72.94962,0.956,FRC4,20,2,Bhandup-Mulund-Thane
+a47f22d3,19.17852,72.94958,0.961,FRC5,19,1,Bhandup-Mulund-Thane
+3b8afffa,19.18727,72.94652,1.076,FRC4,16,4,Bhandup-Mulund-Thane
+31260874,19.18724,72.94656,1.079,FRC4,15,3,Bhandup-Mulund-Thane
+dd38b2bd,19.17275,72.96205,1.093,FRC4,19,1,Bhandup-Mulund-Thane
+f8e67fa2,19.16885,72.94548,1.149,FRC4,22,2,Bhandup-Mulund-Thane
+87ed1d8f,19.16888,72.94548,1.149,FRC4,22,4,Bhandup-Mulund-Thane
+4f5415ef,19.19468,72.94847,1.15,FRC4,23,3,Bhandup-Mulund-Thane
+94bae602,19.19434,72.96258,1.261,FRC4,20,3,Bhandup-Mulund-Thane
+71643196,19.20833,72.95695,1.29,FRC4,18,2,Bhandup-Mulund-Thane
+ba032be7,19.19900,72.95440,1.301,FRC4,21,3,Bhandup-Mulund-Thane
+ec9d1b0a,19.19893,72.95438,1.307,FRC4,21,5,Bhandup-Mulund-Thane
+eaf6a921,19.17906,72.95862,1.354,FRC4,23,1,Bhandup-Mulund-Thane
+c700b62c,19.17980,72.95796,1.4,FRC4,21,4,Bhandup-Mulund-Thane
+8aa38a91,19.16974,72.95755,1.427,FRC6,16,1,Bhandup-Mulund-Thane
+a09066bc,19.18213,72.94218,1.506,FRC4,20,6,Bhandup-Mulund-Thane
+b73116d2,19.18215,72.94208,1.511,FRC4,20,2,Bhandup-Mulund-Thane
+dd37e7d2,19.20172,72.96583,1.556,FRC3,28,1,Bhandup-Mulund-Thane
+fa930838,19.20196,72.94983,1.689,FRC4,20,4,Bhandup-Mulund-Thane
+2038938e,19.19180,72.94503,1.715,FRC7,13,1,Bhandup-Mulund-Thane
+d7d351d9,19.19965,72.94618,1.799,FRC4,17,6,Bhandup-Mulund-Thane
+af74a11b,19.19024,72.95278,1.911,FRC4,19,5,Bhandup-Mulund-Thane
+ef5ea7cf,19.19696,72.96445,1.998,FRC4,22,1,Bhandup-Mulund-Thane
+749c82bf,19.20163,72.95901,2.044,FRC4,20,5,Bhandup-Mulund-Thane
+a367fdfb,19.20157,72.95897,2.044,FRC4,20,2,Bhandup-Mulund-Thane
+69bd8bd7,19.17395,72.93671,2.045,FRC4,18,1,Bhandup-Mulund-Thane
+96544326,19.17414,72.93693,2.054,FRC4,17,1,Bhandup-Mulund-Thane
+34d1a158,19.22738,72.97000,2.062,FRC4,25,1,Bhandup-Mulund-Thane
+84020e97,19.16584,72.95605,2.134,FRC4,23,3,Bhandup-Mulund-Thane
+bceec425,19.15883,72.95953,2.226,FRC4,35,2,Bhandup-Mulund-Thane
+03edfb5e,19.16841,72.95119,2.298,FRC4,16,3,Bhandup-Mulund-Thane
+5e57f7b4,19.17420,72.95879,2.45,FRC4,21,2,Bhandup-Mulund-Thane
+05f8b11b,19.20157,72.96668,2.812,FRC1,42,1,Bhandup-Mulund-Thane
+4bfed46a,19.20204,72.96726,2.849,FRC1,46,3,Bhandup-Mulund-Thane
+6d291830,19.17293,72.94863,2.887,FRC5,19,5,Bhandup-Mulund-Thane
+fb769626,19.17311,72.94867,2.899,FRC4,17,3,Bhandup-Mulund-Thane
+88dc39fd,19.02906,72.88771,0.105,FRC4,21,1,Central (Dadar-Sion-Matunga)
+8e25beee,19.04691,72.82902,0.159,FRC4,41,1,Central (Dadar-Sion-Matunga)
+b1b02d24,19.04210,72.87598,0.179,FRC4,17,2,Central (Dadar-Sion-Matunga)
+3b38a2eb,19.02798,72.88561,0.231,FRC4,49,2,Central (Dadar-Sion-Matunga)
+49abdb96,19.02980,72.88889,0.24,FRC4,36,1,Central (Dadar-Sion-Matunga)
+1b266272,19.04961,72.83898,0.26,FRC2,36,1,Central (Dadar-Sion-Matunga)
+f7a78d09,19.05425,72.84912,0.264,FRC2,38,1,Central (Dadar-Sion-Matunga)
+69a6aebe,19.05342,72.84853,0.274,FRC2,21,1,Central (Dadar-Sion-Matunga)
+409ca3,19.00445,72.84306,0.293,FRC4,24,2,Central (Dadar-Sion-Matunga)
+95215f40,19.02487,72.85849,0.344,FRC2,20,1,Central (Dadar-Sion-Matunga)
+9381ee40,19.04511,72.84079,0.369,FRC2,19,1,Central (Dadar-Sion-Matunga)
+44956999,19.05757,72.83405,0.392,FRC4,17,1,Central (Dadar-Sion-Matunga)
+fae54b79,19.03820,72.86859,0.397,FRC4,14,1,Central (Dadar-Sion-Matunga)
+741eb36d,19.04817,72.85399,0.474,FRC2,28,1,Central (Dadar-Sion-Matunga)
+ad01d8b6,19.04841,72.86391,0.501,FRC2,22,1,Central (Dadar-Sion-Matunga)
+0c0a1aef,19.02734,72.85963,0.51,FRC2,27,2,Central (Dadar-Sion-Matunga)
+d1984b,19.01200,72.81158,0.517,FRC1,69,1,Central (Dadar-Sion-Matunga)
+2c8d2fae,19.03950,72.84493,0.517,FRC4,15,1,Central (Dadar-Sion-Matunga)
+b1b86cbe,19.03950,72.84493,0.517,FRC4,15,1,Central (Dadar-Sion-Matunga)
+9a75b972,19.05399,72.88469,0.517,FRC2,38,2,Central (Dadar-Sion-Matunga)
+695909,19.00677,72.81173,0.555,FRC1,54,1,Central (Dadar-Sion-Matunga)
+ffba5864,19.04955,72.83586,0.559,FRC2,38,1,Central (Dadar-Sion-Matunga)
+0f890f47,19.05466,72.84591,0.592,FRC2,26,1,Central (Dadar-Sion-Matunga)
+0e6326f9,19.01820,72.85046,0.607,FRC4,23,1,Central (Dadar-Sion-Matunga)
+3e154004,19.01823,72.85041,0.611,FRC4,25,1,Central (Dadar-Sion-Matunga)
+8c1ddc53,19.01806,72.83242,0.613,FRC4,21,1,Central (Dadar-Sion-Matunga)
+5b7af79c,19.01979,72.84486,0.613,FRC2,23,1,Central (Dadar-Sion-Matunga)
+df3b9181,19.01971,72.84477,0.614,FRC2,26,1,Central (Dadar-Sion-Matunga)
+58b90b69,19.01808,72.83244,0.615,FRC4,18,1,Central (Dadar-Sion-Matunga)
+5e3803,18.99365,72.81482,0.632,FRC2,35,1,Central (Dadar-Sion-Matunga)
+2f8778,18.99611,72.85507,0.649,FRC2,57,3,Central (Dadar-Sion-Matunga)
+b5c861cb,19.02064,72.85329,0.671,FRC4,23,2,Central (Dadar-Sion-Matunga)
+34fbf5d3,19.05100,72.83605,0.676,FRC7,19,1,Central (Dadar-Sion-Matunga)
+44236f06,19.05803,72.85028,0.684,FRC4,22,3,Central (Dadar-Sion-Matunga)
+f5cbd3,19.00796,72.84142,0.721,FRC4,22,2,Central (Dadar-Sion-Matunga)
+cd9b1c5c,19.04966,72.82262,0.756,FRC4,20,2,Central (Dadar-Sion-Matunga)
+59fb3958,19.02050,72.85312,0.77,FRC4,21,1,Central (Dadar-Sion-Matunga)
+d13b00,19.01465,72.81967,0.773,FRC4,23,1,Central (Dadar-Sion-Matunga)
+d13b002b,19.01467,72.81967,0.773,FRC4,23,1,Central (Dadar-Sion-Matunga)
+c8eea31f,19.02186,72.84141,0.786,FRC4,19,1,Central (Dadar-Sion-Matunga)
+443229a1,19.03977,72.83952,0.786,FRC4,23,5,Central (Dadar-Sion-Matunga)
+ca867c,19.01121,72.81234,0.789,FRC1,58,1,Central (Dadar-Sion-Matunga)
+ed7e89,19.01481,72.81923,0.789,FRC4,29,1,Central (Dadar-Sion-Matunga)
+347edf,19.01451,72.81355,0.809,FRC1,56,1,Central (Dadar-Sion-Matunga)
+b593c2,18.99512,72.82230,0.822,FRC4,17,3,Central (Dadar-Sion-Matunga)
+f1635b3c,19.04985,72.82271,0.823,FRC4,19,1,Central (Dadar-Sion-Matunga)
+3d19f1a1,19.04588,72.86554,0.825,FRC2,27,1,Central (Dadar-Sion-Matunga)
+00297b,19.00052,72.84011,0.828,FRC4,21,1,Central (Dadar-Sion-Matunga)
+4073bc,19.00524,72.84987,0.844,FRC4,19,1,Central (Dadar-Sion-Matunga)
+bd078b,19.00529,72.84948,0.845,FRC4,18,2,Central (Dadar-Sion-Matunga)
+aa58a8cf,19.05572,72.88304,0.85,FRC4,18,3,Central (Dadar-Sion-Matunga)
+fac5d1,19.00023,72.83999,0.858,FRC4,21,4,Central (Dadar-Sion-Matunga)
+428f94,18.99483,72.84051,0.867,FRC4,24,2,Central (Dadar-Sion-Matunga)
+c9ae05f9,19.01424,72.87148,0.87,FRC4,29,2,Central (Dadar-Sion-Matunga)
+86a8f3,18.99479,72.84033,0.871,FRC4,19,2,Central (Dadar-Sion-Matunga)
+47dcce42,19.02210,72.86595,0.881,FRC4,21,2,Central (Dadar-Sion-Matunga)
+927c2ccf,19.01563,72.85122,0.882,FRC4,23,1,Central (Dadar-Sion-Matunga)
+5d2db6bc,19.02210,72.86595,0.883,FRC4,20,5,Central (Dadar-Sion-Matunga)
+c89845,19.01420,72.87168,0.884,FRC4,37,2,Central (Dadar-Sion-Matunga)
+c89845e8,19.01471,72.87191,0.884,FRC4,37,1,Central (Dadar-Sion-Matunga)
+78895264,19.01532,72.85173,0.896,FRC4,26,1,Central (Dadar-Sion-Matunga)
+2d28a074,19.01567,72.82186,0.898,FRC4,16,7,Central (Dadar-Sion-Matunga)
+3de3d9b6,19.02165,72.84142,0.898,FRC2,22,1,Central (Dadar-Sion-Matunga)
+61a0d4,19.01579,72.82155,0.9,FRC4,18,1,Central (Dadar-Sion-Matunga)
+b603d3,19.00725,72.84068,0.927,FRC4,24,2,Central (Dadar-Sion-Matunga)
+b29d23e5,19.03537,72.84345,0.933,FRC5,21,2,Central (Dadar-Sion-Matunga)
+48e774d7,19.01683,72.84730,0.958,FRC2,23,1,Central (Dadar-Sion-Matunga)
+2096de,19.00219,72.82504,0.969,FRC4,16,2,Central (Dadar-Sion-Matunga)
+f5b72b,19.00230,72.82500,0.987,FRC4,17,4,Central (Dadar-Sion-Matunga)
+7e43f9a5,19.01657,72.83781,1.004,FRC4,26,2,Central (Dadar-Sion-Matunga)
+d2715ce9,19.01711,72.84712,1.008,FRC4,22,2,Central (Dadar-Sion-Matunga)
+0ab7badd,19.01863,72.86068,1.018,FRC2,26,3,Central (Dadar-Sion-Matunga)
+077de65a,19.03078,72.86476,1.021,FRC4,25,1,Central (Dadar-Sion-Matunga)
+5bd2aceb,19.01856,72.86058,1.023,FRC2,29,2,Central (Dadar-Sion-Matunga)
+6a42e621,19.01682,72.83815,1.029,FRC4,23,2,Central (Dadar-Sion-Matunga)
+fefcc4,18.99841,72.82189,1.03,FRC4,18,2,Central (Dadar-Sion-Matunga)
+f126da67,19.05133,72.84851,1.035,FRC2,27,3,Central (Dadar-Sion-Matunga)
+adefb5,19.01137,72.81229,1.06,FRC1,72,1,Central (Dadar-Sion-Matunga)
+4ad41a37,19.03046,72.86434,1.067,FRC4,24,4,Central (Dadar-Sion-Matunga)
+bf6f1c40,19.04066,72.87557,1.069,FRC4,26,2,Central (Dadar-Sion-Matunga)
+60266dad,19.04716,72.86045,1.071,FRC2,15,3,Central (Dadar-Sion-Matunga)
+5a4ec1d8,19.04069,72.87541,1.09,FRC4,25,4,Central (Dadar-Sion-Matunga)
+94b37c34,19.04551,72.84679,1.097,FRC2,28,1,Central (Dadar-Sion-Matunga)
+13e376,18.99679,72.85519,1.101,FRC2,61,2,Central (Dadar-Sion-Matunga)
+6f5cc7,18.99814,72.85775,1.118,FRC2,61,2,Central (Dadar-Sion-Matunga)
+2c6d04,19.00730,72.81268,1.153,FRC1,50,1,Central (Dadar-Sion-Matunga)
+1cfdde,19.00615,72.85415,1.194,FRC2,25,2,Central (Dadar-Sion-Matunga)
+6edc5c,18.99318,72.84807,1.204,FRC4,16,2,Central (Dadar-Sion-Matunga)
+9dbbf72a,19.05078,72.85981,1.207,FRC2,24,4,Central (Dadar-Sion-Matunga)
+e4287324,19.04479,72.86525,1.21,FRC1,33,1,Central (Dadar-Sion-Matunga)
+ef9032b8,19.05102,72.86015,1.213,FRC2,26,7,Central (Dadar-Sion-Matunga)
+968abb,19.00550,72.85702,1.228,FRC3,33,1,Central (Dadar-Sion-Matunga)
+6c7718,19.00035,72.84702,1.242,FRC4,21,3,Central (Dadar-Sion-Matunga)
+c7506a,19.01353,72.84805,1.246,FRC4,19,1,Central (Dadar-Sion-Matunga)
+c7506a23,19.01348,72.84795,1.246,FRC4,19,1,Central (Dadar-Sion-Matunga)
+e7f109e9,19.03645,72.87416,1.247,FRC5,22,4,Central (Dadar-Sion-Matunga)
+b28e8860,19.03654,72.87435,1.247,FRC5,22,1,Central (Dadar-Sion-Matunga)
+8f5220,19.01409,72.82968,1.26,FRC4,27,4,Central (Dadar-Sion-Matunga)
+8f522065,19.01410,72.82962,1.26,FRC4,27,1,Central (Dadar-Sion-Matunga)
+0fc45116,19.04322,72.86438,1.283,FRC2,33,6,Central (Dadar-Sion-Matunga)
+6f8327c6,19.05590,72.84626,1.29,FRC2,36,3,Central (Dadar-Sion-Matunga)
+029771,18.99847,72.81260,1.295,FRC2,37,3,Central (Dadar-Sion-Matunga)
+e2d81c,19.00979,72.81548,1.311,FRC1,39,3,Central (Dadar-Sion-Matunga)
+178488c2,19.04296,72.87342,1.314,FRC4,14,2,Central (Dadar-Sion-Matunga)
+024a1e3a,19.05478,72.82829,1.314,FRC4,19,5,Central (Dadar-Sion-Matunga)
+e00efb,19.00630,72.82463,1.343,FRC6,26,3,Central (Dadar-Sion-Matunga)
+98dc36a2,19.04290,72.87320,1.346,FRC4,14,2,Central (Dadar-Sion-Matunga)
+450186,19.00625,72.82449,1.347,FRC4,21,2,Central (Dadar-Sion-Matunga)
+3a6f303c,19.02882,72.87954,1.356,FRC4,19,3,Central (Dadar-Sion-Matunga)
+102aa64c,19.02882,72.87954,1.356,FRC4,20,3,Central (Dadar-Sion-Matunga)
+8174ee,18.99897,72.81242,1.379,FRC2,34,1,Central (Dadar-Sion-Matunga)
+e76617,19.00628,72.84022,1.489,FRC6,10,1,Central (Dadar-Sion-Matunga)
+3998e9ac,19.04898,72.82991,1.49,FRC4,29,3,Central (Dadar-Sion-Matunga)
+6217791e,19.04960,72.82163,1.508,FRC4,23,2,Central (Dadar-Sion-Matunga)
+45dece17,19.04998,72.82171,1.511,FRC4,21,8,Central (Dadar-Sion-Matunga)
+36af2b,19.00858,72.81625,1.517,FRC4,26,3,Central (Dadar-Sion-Matunga)
+f35b97fd,19.04560,72.84500,1.52,FRC2,24,4,Central (Dadar-Sion-Matunga)
+0ce5cd,19.00032,72.84757,1.522,FRC4,20,3,Central (Dadar-Sion-Matunga)
+eb1da6,19.00870,72.81625,1.535,FRC4,25,2,Central (Dadar-Sion-Matunga)
+bd16b4,18.99426,72.81547,1.567,FRC1,30,8,Central (Dadar-Sion-Matunga)
+c08837ec,19.05076,72.83222,1.595,FRC4,22,3,Central (Dadar-Sion-Matunga)
+a551d251,19.05651,72.88786,1.705,FRC4,19,2,Central (Dadar-Sion-Matunga)
+257823,18.99515,72.84918,1.707,FRC4,16,3,Central (Dadar-Sion-Matunga)
+6844d0,19.00688,72.81885,1.751,FRC4,32,7,Central (Dadar-Sion-Matunga)
+8ad1c1,18.99477,72.81528,1.76,FRC1,33,3,Central (Dadar-Sion-Matunga)
+4b525e,19.01726,72.85824,1.77,FRC2,27,1,Central (Dadar-Sion-Matunga)
+4b525e6f,19.01630,72.85766,1.77,FRC2,27,5,Central (Dadar-Sion-Matunga)
+ad8b7e55,19.05305,72.86823,1.777,FRC2,52,4,Central (Dadar-Sion-Matunga)
+62379371,19.05304,72.86808,1.796,FRC2,53,3,Central (Dadar-Sion-Matunga)
+8e3324ad,19.03916,72.85346,1.84,FRC2,18,7,Central (Dadar-Sion-Matunga)
+d6bdc9e2,19.03904,72.85344,1.85,FRC4,18,2,Central (Dadar-Sion-Matunga)
+1328d274,19.03648,72.86461,2.08,FRC4,18,5,Central (Dadar-Sion-Matunga)
+e3f6c402,19.03669,72.86496,2.147,FRC4,16,7,Central (Dadar-Sion-Matunga)
+2e5cb2a3,19.05181,72.87105,2.22,FRC4,18,3,Central (Dadar-Sion-Matunga)
+97cbda42,19.05174,72.87089,2.228,FRC4,20,5,Central (Dadar-Sion-Matunga)
+d546c8ec,19.02812,72.85539,2.31,FRC4,28,7,Central (Dadar-Sion-Matunga)
+c2f4fa30,19.02907,72.85663,2.31,FRC2,27,2,Central (Dadar-Sion-Matunga)
+8458be,18.99182,72.81099,2.32,FRC1,72,10,Central (Dadar-Sion-Matunga)
+a84f1c,18.99542,72.81127,2.367,FRC1,71,4,Central (Dadar-Sion-Matunga)
+877dcdfd,19.02736,72.86517,2.375,FRC6,17,6,Central (Dadar-Sion-Matunga)
+938b8791,19.02746,72.86509,2.385,FRC6,17,1,Central (Dadar-Sion-Matunga)
+1a03549c,19.04823,72.85614,2.619,FRC2,23,7,Central (Dadar-Sion-Matunga)
+03ace0,19.02003,72.84662,2.772,FRC4,20,1,Central (Dadar-Sion-Matunga)
+03ace018,19.02025,72.84668,2.772,FRC4,20,6,Central (Dadar-Sion-Matunga)
+d358a3,19.02014,72.84688,2.792,FRC4,19,1,Central (Dadar-Sion-Matunga)
+d358a308,19.02023,72.84680,2.792,FRC4,19,3,Central (Dadar-Sion-Matunga)
+00efd4a0,19.21479,72.84470,0.125,FRC4,25,1,Goregaon-Malad-Borivali-Dahisar
+4a40e549,19.23360,72.85440,0.134,FRC4,23,1,Goregaon-Malad-Borivali-Dahisar
+d7b44de6,19.25496,72.87006,0.159,FRC2,22,4,Goregaon-Malad-Borivali-Dahisar
+40dbf643,19.17786,72.85838,0.163,FRC4,28,1,Goregaon-Malad-Borivali-Dahisar
+d68464f7,19.25849,72.85454,0.163,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+8f9dfd85,19.25575,72.85605,0.239,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+8d648a99,19.25425,72.85990,0.242,FRC4,13,1,Goregaon-Malad-Borivali-Dahisar
+5f16898e,19.23204,72.85253,0.243,FRC4,19,1,Goregaon-Malad-Borivali-Dahisar
+ae05fdf1,19.18000,72.85810,0.244,FRC4,16,1,Goregaon-Malad-Borivali-Dahisar
+d0135dd3,19.24933,72.86181,0.25,FRC4,12,1,Goregaon-Malad-Borivali-Dahisar
+73893d96,19.20181,72.85416,0.261,FRC4,20,1,Goregaon-Malad-Borivali-Dahisar
+af2a865e,19.23407,72.85140,0.268,FRC4,23,1,Goregaon-Malad-Borivali-Dahisar
+00ca67dc,19.23323,72.82451,0.269,FRC2,11,6,Goregaon-Malad-Borivali-Dahisar
+3c40b819,19.25558,72.87010,0.274,FRC2,19,1,Goregaon-Malad-Borivali-Dahisar
+74249ad9,19.24762,72.85608,0.35,FRC4,20,1,Goregaon-Malad-Borivali-Dahisar
+cf44524d,19.20030,72.85495,0.361,FRC4,22,1,Goregaon-Malad-Borivali-Dahisar
+862fd858,19.21620,72.84637,0.362,FRC4,14,1,Goregaon-Malad-Borivali-Dahisar
+f397b192,19.19573,72.83318,0.409,FRC4,23,1,Goregaon-Malad-Borivali-Dahisar
+d04dd45b,19.17976,72.85866,0.41,FRC4,25,2,Goregaon-Malad-Borivali-Dahisar
+dc722175,19.19558,72.83316,0.412,FRC4,14,1,Goregaon-Malad-Borivali-Dahisar
+0c3c902a,19.23245,72.84839,0.425,FRC4,18,1,Goregaon-Malad-Borivali-Dahisar
+4c22db73,19.20146,72.86191,0.428,FRC4,23,1,Goregaon-Malad-Borivali-Dahisar
+3955fb4e,19.20620,72.84011,0.449,FRC4,17,1,Goregaon-Malad-Borivali-Dahisar
+f07155cd,19.18773,72.86059,0.473,FRC4,13,2,Goregaon-Malad-Borivali-Dahisar
+512cff09,19.17469,72.85156,0.477,FRC4,13,2,Goregaon-Malad-Borivali-Dahisar
+ca8afe60,19.19158,72.85890,0.477,FRC4,26,2,Goregaon-Malad-Borivali-Dahisar
+0b71bad5,19.17469,72.85156,0.478,FRC4,14,1,Goregaon-Malad-Borivali-Dahisar
+41b6f6b1,19.18833,72.84457,0.478,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+cd09a5bf,19.21365,72.86786,0.478,FRC4,21,6,Goregaon-Malad-Borivali-Dahisar
+6f31cac7,19.24539,72.84722,0.478,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+a574fb2f,19.21445,72.86794,0.479,FRC4,25,3,Goregaon-Malad-Borivali-Dahisar
+b38af3e4,19.24539,72.84722,0.48,FRC4,19,2,Goregaon-Malad-Borivali-Dahisar
+575627fc,19.25783,72.86198,0.49,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+853089c6,19.17385,72.84419,0.495,FRC4,22,2,Goregaon-Malad-Borivali-Dahisar
+3add4d36,19.17644,72.83354,0.51,FRC4,17,1,Goregaon-Malad-Borivali-Dahisar
+b84b3228,19.17644,72.83354,0.51,FRC4,18,1,Goregaon-Malad-Borivali-Dahisar
+78ac65e0,19.19659,72.86484,0.516,FRC4,13,1,Goregaon-Malad-Borivali-Dahisar
+a4d00af9,19.19659,72.86484,0.516,FRC4,13,3,Goregaon-Malad-Borivali-Dahisar
+48e3f315,19.23105,72.85357,0.528,FRC4,19,1,Goregaon-Malad-Borivali-Dahisar
+dc34082f,19.21031,72.87189,0.544,FRC4,20,2,Goregaon-Malad-Borivali-Dahisar
+7ec81c45,19.21928,72.83122,0.553,FRC4,24,2,Goregaon-Malad-Borivali-Dahisar
+5ae03892,19.21934,72.83139,0.556,FRC4,22,1,Goregaon-Malad-Borivali-Dahisar
+47451e19,19.17418,72.85940,0.601,FRC4,23,1,Goregaon-Malad-Borivali-Dahisar
+b62eace3,19.25274,72.86044,0.609,FRC4,16,1,Goregaon-Malad-Borivali-Dahisar
+6d9172b9,19.18872,72.85857,0.68,FRC4,17,3,Goregaon-Malad-Borivali-Dahisar
+4ccf51db,19.18922,72.86601,0.683,FRC4,15,5,Goregaon-Malad-Borivali-Dahisar
+96b7d7d4,19.18922,72.86601,0.685,FRC4,17,3,Goregaon-Malad-Borivali-Dahisar
+df655493,19.21265,72.83245,0.694,FRC4,17,2,Goregaon-Malad-Borivali-Dahisar
+3b59b5bc,19.17012,72.85418,0.709,FRC4,23,1,Goregaon-Malad-Borivali-Dahisar
+ae7ad98c,19.22152,72.86547,0.713,FRC4,24,21,Goregaon-Malad-Borivali-Dahisar
+e5c346ab,19.17012,72.85416,0.715,FRC4,22,3,Goregaon-Malad-Borivali-Dahisar
+979f7a5f,19.22130,72.86525,0.715,FRC4,22,2,Goregaon-Malad-Borivali-Dahisar
+b767b176,19.21976,72.84126,0.717,FRC4,20,1,Goregaon-Malad-Borivali-Dahisar
+8fff9f4f,19.19777,72.87270,0.727,FRC7,17,3,Goregaon-Malad-Borivali-Dahisar
+bfa87b53,19.19762,72.87283,0.737,FRC4,17,5,Goregaon-Malad-Borivali-Dahisar
+f3fd103f,19.20590,72.86578,0.765,FRC4,29,2,Goregaon-Malad-Borivali-Dahisar
+fbfd1631,19.17190,72.87929,0.796,FRC4,16,4,Goregaon-Malad-Borivali-Dahisar
+c666b5f3,19.18616,72.85338,0.803,FRC4,17,2,Goregaon-Malad-Borivali-Dahisar
+11c2064c,19.24421,72.86418,0.825,FRC4,15,2,Goregaon-Malad-Borivali-Dahisar
+f9f2dfb5,19.24413,72.86447,0.831,FRC4,17,1,Goregaon-Malad-Borivali-Dahisar
+30a5b081,19.20326,72.84521,0.84,FRC4,21,2,Goregaon-Malad-Borivali-Dahisar
+5b8647d9,19.25322,72.85151,0.871,FRC7,14,3,Goregaon-Malad-Borivali-Dahisar
+5b188ca1,19.25320,72.85147,0.871,FRC4,14,3,Goregaon-Malad-Borivali-Dahisar
+1353497d,19.25508,72.86151,0.911,FRC4,20,1,Goregaon-Malad-Borivali-Dahisar
+7e494158,19.20918,72.84047,0.933,FRC4,20,1,Goregaon-Malad-Borivali-Dahisar
+ecd598ab,19.22041,72.85008,0.946,FRC4,23,3,Goregaon-Malad-Borivali-Dahisar
+d2f22c44,19.22977,72.82436,0.947,FRC4,22,2,Goregaon-Malad-Borivali-Dahisar
+2b7ed339,19.19799,72.87657,0.955,FRC4,18,2,Goregaon-Malad-Borivali-Dahisar
+bcd6129e,19.19799,72.87657,0.959,FRC4,17,13,Goregaon-Malad-Borivali-Dahisar
+5559f752,19.21920,72.83790,0.966,FRC4,22,4,Goregaon-Malad-Borivali-Dahisar
+69685419,19.19768,72.86492,0.993,FRC4,13,5,Goregaon-Malad-Borivali-Dahisar
+4bbb00ed,19.21909,72.83797,0.998,FRC4,19,1,Goregaon-Malad-Borivali-Dahisar
+60ea5871,19.19780,72.86489,1.002,FRC4,11,2,Goregaon-Malad-Borivali-Dahisar
+f20d567c,19.21032,72.87288,1.011,FRC4,20,9,Goregaon-Malad-Borivali-Dahisar
+17b2a9e2,19.21061,72.87276,1.032,FRC4,21,5,Goregaon-Malad-Borivali-Dahisar
+dd203970,19.22037,72.83401,1.044,FRC7,17,2,Goregaon-Malad-Borivali-Dahisar
+db688cd7,19.21065,72.86878,1.047,FRC4,24,4,Goregaon-Malad-Borivali-Dahisar
+4277c527,19.23588,72.85407,1.066,FRC4,19,3,Goregaon-Malad-Borivali-Dahisar
+e628d526,19.23587,72.85415,1.071,FRC4,19,2,Goregaon-Malad-Borivali-Dahisar
+8eec815c,19.20235,72.84386,1.078,FRC4,20,4,Goregaon-Malad-Borivali-Dahisar
+0239e8cb,19.20217,72.84440,1.082,FRC4,19,1,Goregaon-Malad-Borivali-Dahisar
+7a9fc21d,19.25001,72.85721,1.085,FRC7,21,2,Goregaon-Malad-Borivali-Dahisar
+6fcf530d,19.25001,72.85721,1.085,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+52dd3b41,19.20999,72.86860,1.124,FRC4,22,13,Goregaon-Malad-Borivali-Dahisar
+680e9083,19.20814,72.84047,1.13,FRC4,18,4,Goregaon-Malad-Borivali-Dahisar
+579d9d40,19.17185,72.83176,1.146,FRC4,25,1,Goregaon-Malad-Borivali-Dahisar
+9233277c,19.21401,72.87134,1.163,FRC4,15,3,Goregaon-Malad-Borivali-Dahisar
+db913eb1,19.25863,72.86172,1.21,FRC4,18,6,Goregaon-Malad-Borivali-Dahisar
+a64edc71,19.16894,72.84226,1.213,FRC4,14,4,Goregaon-Malad-Borivali-Dahisar
+1fe57ad4,19.16894,72.84226,1.213,FRC7,14,1,Goregaon-Malad-Borivali-Dahisar
+26c10519,19.27709,72.88363,1.218,FRC4,17,1,Goregaon-Malad-Borivali-Dahisar
+072ee168,19.25863,72.86160,1.22,FRC4,18,2,Goregaon-Malad-Borivali-Dahisar
+d4ed5f7f,19.23893,72.84932,1.221,FRC4,26,2,Goregaon-Malad-Borivali-Dahisar
+95b70c64,19.23879,72.84989,1.225,FRC4,21,3,Goregaon-Malad-Borivali-Dahisar
+544115e2,19.18773,72.85497,1.267,FRC4,19,2,Goregaon-Malad-Borivali-Dahisar
+1057ba16,19.18173,72.85020,1.272,FRC4,19,2,Goregaon-Malad-Borivali-Dahisar
+a09ea1d7,19.18961,72.83856,1.272,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+0d8e3b93,19.18951,72.83854,1.283,FRC4,21,1,Goregaon-Malad-Borivali-Dahisar
+4699a023,19.20843,72.86650,1.299,FRC4,25,7,Goregaon-Malad-Borivali-Dahisar
+e702ccb6,19.17289,72.87136,1.32,FRC4,18,8,Goregaon-Malad-Borivali-Dahisar
+b1f80706,19.18023,72.85535,1.325,FRC4,19,2,Goregaon-Malad-Borivali-Dahisar
+f5adb627,19.22637,72.82850,1.36,FRC4,17,4,Goregaon-Malad-Borivali-Dahisar
+427ed7f3,19.20007,72.82340,1.431,FRC4,23,5,Goregaon-Malad-Borivali-Dahisar
+67ac9510,19.25903,72.85574,1.479,FRC4,15,5,Goregaon-Malad-Borivali-Dahisar
+189b78f5,19.21887,72.84694,1.517,FRC7,20,4,Goregaon-Malad-Borivali-Dahisar
+604e3388,19.16161,72.84827,1.569,FRC4,16,5,Goregaon-Malad-Borivali-Dahisar
+4f73beb2,19.24557,72.85137,1.575,FRC4,21,3,Goregaon-Malad-Borivali-Dahisar
+8984eab4,19.27117,72.88769,1.577,FRC4,17,6,Goregaon-Malad-Borivali-Dahisar
+0b9185e3,19.23160,72.83342,1.603,FRC2,26,17,Goregaon-Malad-Borivali-Dahisar
+e357ea35,19.22884,72.84853,1.604,FRC3,19,5,Goregaon-Malad-Borivali-Dahisar
+1b8991d5,19.22893,72.84834,1.604,FRC3,21,1,Goregaon-Malad-Borivali-Dahisar
+b96d255c,19.27231,72.88346,1.618,FRC2,25,15,Goregaon-Malad-Borivali-Dahisar
+bd9c70b3,19.24552,72.85147,1.626,FRC4,22,6,Goregaon-Malad-Borivali-Dahisar
+5cbbb5d6,19.18181,72.86293,1.629,FRC4,15,3,Goregaon-Malad-Borivali-Dahisar
+b4fe80b7,19.18174,72.86274,1.679,FRC4,15,11,Goregaon-Malad-Borivali-Dahisar
+4d532ec7,19.17899,72.83991,1.685,FRC7,18,3,Goregaon-Malad-Borivali-Dahisar
+d2c60a57,19.17896,72.83974,1.69,FRC4,18,2,Goregaon-Malad-Borivali-Dahisar
+1b221fe1,19.16926,72.86683,1.712,FRC4,26,5,Goregaon-Malad-Borivali-Dahisar
+39226c54,19.17775,72.84179,1.728,FRC4,17,4,Goregaon-Malad-Borivali-Dahisar
+2900d78d,19.19908,72.85017,1.742,FRC4,15,3,Goregaon-Malad-Borivali-Dahisar
+625a201c,19.19494,72.85870,1.768,FRC4,21,6,Goregaon-Malad-Borivali-Dahisar
+445e4eaf,19.23872,72.85993,1.792,FRC2,30,1,Goregaon-Malad-Borivali-Dahisar
+e5d3204c,19.16809,72.85849,1.873,FRC4,21,3,Goregaon-Malad-Borivali-Dahisar
+eb5c9978,19.23180,72.83187,1.878,FRC2,26,7,Goregaon-Malad-Borivali-Dahisar
+80afb947,19.18134,72.85258,1.908,FRC4,17,4,Goregaon-Malad-Borivali-Dahisar
+bbca6b1b,19.19882,72.85897,1.921,FRC4,19,3,Goregaon-Malad-Borivali-Dahisar
+7ada3f07,19.20868,72.87504,1.925,FRC4,18,14,Goregaon-Malad-Borivali-Dahisar
+1ecbbbb2,19.19053,72.86488,2.057,FRC7,12,2,Goregaon-Malad-Borivali-Dahisar
+7c20fd92,19.22390,72.84407,2.095,FRC4,19,1,Goregaon-Malad-Borivali-Dahisar
+b503fd05,19.17252,72.87575,2.125,FRC4,17,23,Goregaon-Malad-Borivali-Dahisar
+c5c7c73e,19.19794,72.84559,2.127,FRC4,22,7,Goregaon-Malad-Borivali-Dahisar
+42d05290,19.22102,72.85605,2.183,FRC4,30,5,Goregaon-Malad-Borivali-Dahisar
+284601ab,19.19968,72.84825,2.22,FRC4,18,4,Goregaon-Malad-Borivali-Dahisar
+6f411c55,19.19801,72.84620,2.273,FRC4,24,4,Goregaon-Malad-Borivali-Dahisar
+4cbf7f69,19.20665,72.82983,2.285,FRC4,19,5,Goregaon-Malad-Borivali-Dahisar
+bb8e56ac,19.22240,72.82837,2.524,FRC5,23,21,Goregaon-Malad-Borivali-Dahisar
+4650f1cf,19.22239,72.82842,2.524,FRC4,22,9,Goregaon-Malad-Borivali-Dahisar
+9538e773,19.24793,72.86319,2.567,FRC2,21,4,Goregaon-Malad-Borivali-Dahisar
+b169546e,19.18142,72.84193,2.6,FRC4,18,8,Goregaon-Malad-Borivali-Dahisar
+1cafa9e7,19.20665,72.82734,2.676,FRC4,19,13,Goregaon-Malad-Borivali-Dahisar
+b64535b5,19.24802,72.86351,2.689,FRC2,22,6,Goregaon-Malad-Borivali-Dahisar
+6d43a46b,19.24764,72.86799,2.707,FRC4,16,4,Goregaon-Malad-Borivali-Dahisar
+655f25f1,19.24800,72.86776,2.708,FRC4,15,21,Goregaon-Malad-Borivali-Dahisar
+43266313,19.19453,72.83571,2.75,FRC4,22,12,Goregaon-Malad-Borivali-Dahisar
+9fa85f09,19.16731,72.86454,2.783,FRC4,27,18,Goregaon-Malad-Borivali-Dahisar
+90836517,19.22075,72.85384,2.95,FRC4,30,8,Goregaon-Malad-Borivali-Dahisar
+6bd822bf,19.18536,72.85419,2.971,FRC4,19,6,Goregaon-Malad-Borivali-Dahisar
+a3719bee,19.08777,72.90857,0.222,FRC4,16,1,Kurla-Chembur-Ghatkopar
+1fc9aefd,19.05910,72.89940,0.249,FRC4,23,1,Kurla-Chembur-Ghatkopar
+b7d82317,19.06821,72.89119,0.263,FRC4,11,2,Kurla-Chembur-Ghatkopar
+24540df0,19.06976,72.90534,0.358,FRC1,23,1,Kurla-Chembur-Ghatkopar
+b5952cd7,19.06970,72.90590,0.362,FRC4,31,1,Kurla-Chembur-Ghatkopar
+0cda3903,19.06612,72.90038,0.372,FRC4,20,1,Kurla-Chembur-Ghatkopar
+f4c9e22c,19.08198,72.90704,0.426,FRC6,21,1,Kurla-Chembur-Ghatkopar
+65327147,19.11349,72.93199,0.444,FRC4,13,1,Kurla-Chembur-Ghatkopar
+87c952d7,19.06483,72.89708,0.461,FRC4,20,1,Kurla-Chembur-Ghatkopar
+63792ff6,19.05658,72.89715,0.478,FRC4,20,1,Kurla-Chembur-Ghatkopar
+4bafafe9,19.08597,72.91491,0.495,FRC4,18,2,Kurla-Chembur-Ghatkopar
+10917ea4,19.08529,72.88387,0.56,FRC4,21,2,Kurla-Chembur-Ghatkopar
+2df91b41,19.06753,72.90199,0.576,FRC4,28,1,Kurla-Chembur-Ghatkopar
+077c3283,19.07819,72.91607,0.576,FRC4,25,1,Kurla-Chembur-Ghatkopar
+7b4b8abb,19.04329,72.90873,0.586,FRC2,34,5,Kurla-Chembur-Ghatkopar
+6986cbc2,19.04312,72.90896,0.586,FRC2,37,1,Kurla-Chembur-Ghatkopar
+26d798d5,19.06884,72.90461,0.587,FRC2,48,1,Kurla-Chembur-Ghatkopar
+e07154b7,19.09138,72.90544,0.608,FRC3,27,2,Kurla-Chembur-Ghatkopar
+285eb246,19.09135,72.90558,0.612,FRC3,29,1,Kurla-Chembur-Ghatkopar
+2391816e,19.06855,72.90904,0.628,FRC1,29,2,Kurla-Chembur-Ghatkopar
+9f5a1580,19.08206,72.88050,0.64,FRC4,18,4,Kurla-Chembur-Ghatkopar
+18a9daa2,19.07949,72.90734,0.675,FRC4,15,1,Kurla-Chembur-Ghatkopar
+d4fcb9f9,19.11756,72.89923,0.685,FRC4,18,3,Kurla-Chembur-Ghatkopar
+ae2ac37c,19.11756,72.89923,0.685,FRC4,18,2,Kurla-Chembur-Ghatkopar
+0eca33a4,19.07086,72.90740,0.708,FRC1,50,1,Kurla-Chembur-Ghatkopar
+d77542fa,19.04935,72.90025,0.727,FRC4,22,1,Kurla-Chembur-Ghatkopar
+bf8d5a63,19.04914,72.90054,0.733,FRC4,24,1,Kurla-Chembur-Ghatkopar
+bbd7318b,19.11860,72.91230,0.782,FRC4,21,1,Kurla-Chembur-Ghatkopar
+1bb80e83,19.10865,72.93202,0.812,FRC4,37,2,Kurla-Chembur-Ghatkopar
+e1233617,19.04416,72.92328,0.833,FRC2,30,9,Kurla-Chembur-Ghatkopar
+94e5c0f5,19.05123,72.93654,0.833,FRC2,25,3,Kurla-Chembur-Ghatkopar
+8ac22262,19.08448,72.92099,0.833,FRC3,40,2,Kurla-Chembur-Ghatkopar
+d2ca9da2,19.04915,72.91421,0.897,FRC4,19,3,Kurla-Chembur-Ghatkopar
+e95307ad,19.04901,72.91426,0.9,FRC4,20,2,Kurla-Chembur-Ghatkopar
+7916b55e,19.08697,72.90815,0.97,FRC4,12,1,Kurla-Chembur-Ghatkopar
+e788f848,19.08697,72.90815,0.972,FRC4,11,1,Kurla-Chembur-Ghatkopar
+a9f74131,19.05668,72.92248,1.015,FRC4,18,1,Kurla-Chembur-Ghatkopar
+cf9549c5,19.05692,72.92253,1.029,FRC4,15,1,Kurla-Chembur-Ghatkopar
+3c0b9cf3,19.05743,72.89774,1.04,FRC4,19,4,Kurla-Chembur-Ghatkopar
+ef1c5579,19.05259,72.90657,1.061,FRC4,19,3,Kurla-Chembur-Ghatkopar
+1a6386d9,19.05259,72.90657,1.061,FRC4,20,2,Kurla-Chembur-Ghatkopar
+fce0134f,19.06199,72.91806,1.066,FRC4,28,1,Kurla-Chembur-Ghatkopar
+548acadb,19.11641,72.90858,1.07,FRC4,18,3,Kurla-Chembur-Ghatkopar
+ca0b82b8,19.06187,72.88127,1.076,FRC4,16,4,Kurla-Chembur-Ghatkopar
+0dff96f5,19.11650,72.90868,1.081,FRC4,17,5,Kurla-Chembur-Ghatkopar
+0d7e731c,19.05725,72.90068,1.15,FRC4,20,2,Kurla-Chembur-Ghatkopar
+11adc379,19.05141,72.91056,1.167,FRC4,20,3,Kurla-Chembur-Ghatkopar
+62cda24e,19.05034,72.93487,1.173,FRC1,21,4,Kurla-Chembur-Ghatkopar
+dedd4ec5,19.10830,72.89716,1.196,FRC4,21,6,Kurla-Chembur-Ghatkopar
+1b2f7262,19.10830,72.89716,1.198,FRC4,22,12,Kurla-Chembur-Ghatkopar
+b8dcec26,19.06707,72.91019,1.256,FRC1,33,4,Kurla-Chembur-Ghatkopar
+d895e4c4,19.11950,72.90740,1.256,FRC6,19,2,Kurla-Chembur-Ghatkopar
+18e92d30,19.11936,72.90739,1.283,FRC4,20,5,Kurla-Chembur-Ghatkopar
+14322713,19.11471,72.90285,1.315,FRC4,18,3,Kurla-Chembur-Ghatkopar
+805d0010,19.06625,72.88854,1.353,FRC4,24,2,Kurla-Chembur-Ghatkopar
+ebd27d30,19.07067,72.90906,1.384,FRC1,47,1,Kurla-Chembur-Ghatkopar
+266657eb,19.07534,72.91245,1.46,FRC4,36,4,Kurla-Chembur-Ghatkopar
+a4ea25a9,19.11404,72.93393,1.495,FRC4,18,1,Kurla-Chembur-Ghatkopar
+10ee1315,19.09737,72.88724,1.516,FRC4,16,9,Kurla-Chembur-Ghatkopar
+404b6777,19.09725,72.88712,1.516,FRC4,16,4,Kurla-Chembur-Ghatkopar
+b371b441,19.05587,72.93134,1.627,FRC4,24,19,Kurla-Chembur-Ghatkopar
+25eab277,19.04589,72.90068,1.648,FRC4,17,3,Kurla-Chembur-Ghatkopar
+37b84b8c,19.04580,72.90135,1.657,FRC4,21,9,Kurla-Chembur-Ghatkopar
+2645e14a,19.07597,72.88464,1.695,FRC4,17,4,Kurla-Chembur-Ghatkopar
+c559b545,19.07597,72.88464,1.695,FRC4,18,5,Kurla-Chembur-Ghatkopar
+9a906f1e,19.07402,72.89811,1.717,FRC4,22,6,Kurla-Chembur-Ghatkopar
+caaa69ec,19.07420,72.89824,1.722,FRC4,20,8,Kurla-Chembur-Ghatkopar
+ae0c13e9,19.03567,72.89085,1.82,FRC4,24,3,Kurla-Chembur-Ghatkopar
+b4d2b921,19.06320,72.89109,1.892,FRC4,15,3,Kurla-Chembur-Ghatkopar
+08f30934,19.08973,72.91464,1.907,FRC3,21,9,Kurla-Chembur-Ghatkopar
+1334d1c0,19.11522,72.88579,1.926,FRC4,19,10,Kurla-Chembur-Ghatkopar
+4b606f89,19.11527,72.88569,1.926,FRC4,19,1,Kurla-Chembur-Ghatkopar
+8b76efbe,19.08950,72.91478,1.956,FRC3,22,4,Kurla-Chembur-Ghatkopar
+3d3839da,19.11170,72.91705,1.993,FRC4,23,14,Kurla-Chembur-Ghatkopar
+d45c642e,19.07901,72.90696,2.011,FRC4,19,4,Kurla-Chembur-Ghatkopar
+194940b2,19.09714,72.92726,2.071,FRC4,32,15,Kurla-Chembur-Ghatkopar
+f53f0a5a,19.09521,72.88332,2.245,FRC4,18,13,Kurla-Chembur-Ghatkopar
+f339c064,19.10265,72.89572,2.389,FRC6,17,4,Kurla-Chembur-Ghatkopar
+3b79853d,19.10264,72.89573,2.389,FRC4,17,1,Kurla-Chembur-Ghatkopar
+00d01214,19.08075,72.90630,2.409,FRC3,21,3,Kurla-Chembur-Ghatkopar
+fbb8025d,19.11445,72.89888,2.465,FRC6,19,3,Kurla-Chembur-Ghatkopar
+d96ee339,19.08126,72.91195,2.491,FRC4,21,1,Kurla-Chembur-Ghatkopar
+d60ead0b,19.08161,72.91228,2.5,FRC4,20,7,Kurla-Chembur-Ghatkopar
+331a5c8d,19.08204,72.89384,2.522,FRC4,20,7,Kurla-Chembur-Ghatkopar
+e6ed68ec,19.05872,72.91315,2.6,FRC1,49,2,Kurla-Chembur-Ghatkopar
+90c3237d,19.09609,72.90933,2.628,FRC4,19,8,Kurla-Chembur-Ghatkopar
+35f51bc3,19.08217,72.89471,2.644,FRC3,20,10,Kurla-Chembur-Ghatkopar
+1ea8da2f,19.09647,72.90938,2.655,FRC4,19,10,Kurla-Chembur-Ghatkopar
+3e4f0bb1,19.05721,72.92770,2.693,FRC4,24,11,Kurla-Chembur-Ghatkopar
+3406f89d,19.09274,72.88333,2.774,FRC4,22,8,Kurla-Chembur-Ghatkopar
+9fb7b180,19.05734,72.92771,2.775,FRC1,37,6,Kurla-Chembur-Ghatkopar
+3a2cb5bd,19.11398,72.91564,2.781,FRC4,22,8,Kurla-Chembur-Ghatkopar
+3a1b8c,18.93228,72.82973,0.111,FRC3,25,1,South Mumbai (Colaba-Byculla)
+9ad534,18.94633,72.83444,0.125,FRC4,11,1,South Mumbai (Colaba-Byculla)
+a3abad,18.98543,72.81234,0.129,FRC1,58,1,South Mumbai (Colaba-Byculla)
+e5e4cb,18.97945,72.80808,0.186,FRC1,61,1,South Mumbai (Colaba-Byculla)
+68fc8f,18.93491,72.83179,0.202,FRC4,13,1,South Mumbai (Colaba-Byculla)
+e865fe,18.92726,72.82964,0.29,FRC1,36,2,South Mumbai (Colaba-Byculla)
+d82274,18.93537,72.84046,0.295,FRC4,18,2,South Mumbai (Colaba-Byculla)
+a5eb23,18.97712,72.80971,0.303,FRC1,26,1,South Mumbai (Colaba-Byculla)
+d07ce3,18.92702,72.83146,0.306,FRC1,22,1,South Mumbai (Colaba-Byculla)
+28cb02,18.97986,72.81248,0.315,FRC1,42,1,South Mumbai (Colaba-Byculla)
+5efdb6,18.96347,72.80788,0.317,FRC4,20,1,South Mumbai (Colaba-Byculla)
+8750df,18.98202,72.82464,0.321,FRC4,21,1,South Mumbai (Colaba-Byculla)
+f1c95f,18.93717,72.83699,0.361,FRC4,25,1,South Mumbai (Colaba-Byculla)
+128a7d,18.93856,72.83623,0.375,FRC2,18,1,South Mumbai (Colaba-Byculla)
+67d8a8,18.96239,72.84490,0.376,FRC3,52,5,South Mumbai (Colaba-Byculla)
+326c7b,18.95702,72.81277,0.39,FRC1,26,1,South Mumbai (Colaba-Byculla)
+87b439,18.94588,72.83396,0.422,FRC3,22,1,South Mumbai (Colaba-Byculla)
+888664,18.96015,72.83672,0.439,FRC4,14,1,South Mumbai (Colaba-Byculla)
+940ae1,18.97111,72.83244,0.439,FRC4,20,3,South Mumbai (Colaba-Byculla)
+1f5a2c,18.96019,72.81233,0.44,FRC4,22,1,South Mumbai (Colaba-Byculla)
+bb07f2,18.95713,72.80880,0.469,FRC1,26,1,South Mumbai (Colaba-Byculla)
+d670c8,18.93421,72.83525,0.477,FRC4,17,1,South Mumbai (Colaba-Byculla)
+8f4b1c,18.95036,72.82717,0.492,FRC4,10,1,South Mumbai (Colaba-Byculla)
+cfebe6,18.97466,72.83366,0.538,FRC4,17,3,South Mumbai (Colaba-Byculla)
+016871,18.93071,72.82616,0.54,FRC4,18,3,South Mumbai (Colaba-Byculla)
+063b66,18.98005,72.81135,0.564,FRC1,70,1,South Mumbai (Colaba-Byculla)
+12e894,18.96418,72.84123,0.57,FRC4,19,1,South Mumbai (Colaba-Byculla)
+82fae5,18.96913,72.82993,0.575,FRC4,18,1,South Mumbai (Colaba-Byculla)
+8e8de0,18.96936,72.83011,0.575,FRC4,23,1,South Mumbai (Colaba-Byculla)
+2090a5,18.95577,72.80975,0.578,FRC1,32,1,South Mumbai (Colaba-Byculla)
+44e00a,18.98265,72.81248,0.585,FRC1,54,2,South Mumbai (Colaba-Byculla)
+4093f5,18.96422,72.84110,0.587,FRC4,22,1,South Mumbai (Colaba-Byculla)
+8a01be,18.98509,72.81382,0.599,FRC1,44,1,South Mumbai (Colaba-Byculla)
+fcd3c1,18.95516,72.81859,0.636,FRC4,16,1,South Mumbai (Colaba-Byculla)
+0cebf5,18.97089,72.82051,0.653,FRC4,10,1,South Mumbai (Colaba-Byculla)
+c701c4,18.93788,72.83256,0.66,FRC1,24,3,South Mumbai (Colaba-Byculla)
+1eb4c8,18.93040,72.82599,0.676,FRC4,19,2,South Mumbai (Colaba-Byculla)
+6ebe9d,18.98570,72.83779,0.722,FRC4,20,1,South Mumbai (Colaba-Byculla)
+b000c1,18.98559,72.83766,0.723,FRC4,17,2,South Mumbai (Colaba-Byculla)
+19455a,18.94810,72.83169,0.75,FRC4,15,1,South Mumbai (Colaba-Byculla)
+fe218c,18.95209,72.82337,0.76,FRC7,17,1,South Mumbai (Colaba-Byculla)
+39af20,18.95074,72.83276,0.76,FRC7,17,1,South Mumbai (Colaba-Byculla)
+3c166f,18.96586,72.83911,0.76,FRC7,19,2,South Mumbai (Colaba-Byculla)
+d5a326,18.93274,72.83015,0.787,FRC1,26,6,South Mumbai (Colaba-Byculla)
+1b57ab,18.95661,72.82200,0.789,FRC4,17,3,South Mumbai (Colaba-Byculla)
+7ca8d2,18.92887,72.83153,0.801,FRC1,22,3,South Mumbai (Colaba-Byculla)
+39f94f,18.96553,72.83895,0.806,FRC4,20,1,South Mumbai (Colaba-Byculla)
+16bef7,18.93589,72.83340,0.869,FRC1,23,3,South Mumbai (Colaba-Byculla)
+a17c39,18.92734,72.82624,0.938,FRC1,27,3,South Mumbai (Colaba-Byculla)
+125a55,18.95514,72.82457,0.947,FRC5,16,1,South Mumbai (Colaba-Byculla)
+d47e05,18.98042,72.83874,0.956,FRC4,20,2,South Mumbai (Colaba-Byculla)
+47686d,18.98062,72.83898,0.958,FRC4,23,2,South Mumbai (Colaba-Byculla)
+d7ad39,18.96222,72.82860,0.988,FRC4,15,1,South Mumbai (Colaba-Byculla)
+764b78,18.97991,72.83118,0.998,FRC4,21,1,South Mumbai (Colaba-Byculla)
+b58377,18.96861,72.80049,1.001,FRC4,53,1,South Mumbai (Colaba-Byculla)
+b82cfc,18.95312,72.83674,1.004,FRC4,16,1,South Mumbai (Colaba-Byculla)
+89b852,18.94201,72.83049,1.048,FRC4,23,1,South Mumbai (Colaba-Byculla)
+76027d,18.98252,72.81261,1.075,FRC1,53,1,South Mumbai (Colaba-Byculla)
+ce8c01,18.94208,72.83068,1.076,FRC4,22,1,South Mumbai (Colaba-Byculla)
+3d7773,18.96102,72.82858,1.14,FRC4,18,2,South Mumbai (Colaba-Byculla)
+a2bace,18.95292,72.83596,1.192,FRC7,13,2,South Mumbai (Colaba-Byculla)
+9c6f82,18.92689,72.82723,1.2,FRC1,24,9,South Mumbai (Colaba-Byculla)
+93107c,18.95435,72.82977,1.217,FRC4,13,3,South Mumbai (Colaba-Byculla)
+f7c498,18.98234,72.81363,1.236,FRC1,32,5,South Mumbai (Colaba-Byculla)
+b556c9,18.93561,72.84027,1.307,FRC4,21,3,South Mumbai (Colaba-Byculla)
+ccd87b,18.93546,72.84032,1.32,FRC4,24,3,South Mumbai (Colaba-Byculla)
+462bd3,18.93823,72.83389,1.327,FRC1,27,1,South Mumbai (Colaba-Byculla)
+82fecc,18.97600,72.84029,1.365,FRC6,21,2,South Mumbai (Colaba-Byculla)
+1b4a4d,18.93601,72.82357,1.447,FRC1,31,18,South Mumbai (Colaba-Byculla)
+db45ae,18.95128,72.80283,1.449,FRC4,32,1,South Mumbai (Colaba-Byculla)
+aba00e,18.95116,72.80266,1.454,FRC4,34,19,South Mumbai (Colaba-Byculla)
+bad1f4,18.96886,72.83847,1.488,FRC4,19,2,South Mumbai (Colaba-Byculla)
+8f68fd,18.96884,72.83869,1.488,FRC4,19,4,South Mumbai (Colaba-Byculla)
+b1101f,18.97100,72.80515,1.552,FRC4,23,5,South Mumbai (Colaba-Byculla)
+dc5f89,18.94228,72.83083,1.567,FRC3,26,1,South Mumbai (Colaba-Byculla)
+e6736f,18.93650,72.82362,1.611,FRC1,25,5,South Mumbai (Colaba-Byculla)
+44ff10,18.95091,72.83014,1.667,FRC4,16,4,South Mumbai (Colaba-Byculla)
+534e00,18.91951,72.82863,1.83,FRC3,18,6,South Mumbai (Colaba-Byculla)
+24bc69,18.97598,72.84206,1.884,FRC4,21,1,South Mumbai (Colaba-Byculla)
+7f73c9,18.94987,72.81830,1.931,FRC1,44,1,South Mumbai (Colaba-Byculla)
+e2103c,18.97225,72.80606,1.943,FRC4,26,2,South Mumbai (Colaba-Byculla)
+21f3b7,18.91222,72.82122,1.981,FRC3,23,13,South Mumbai (Colaba-Byculla)
+615315,18.95079,72.82308,2.106,FRC4,17,6,South Mumbai (Colaba-Byculla)
+dd1eaf,18.97772,72.84085,2.135,FRC4,18,2,South Mumbai (Colaba-Byculla)
+621774,18.97750,72.84084,2.139,FRC4,17,5,South Mumbai (Colaba-Byculla)
+960340,18.95508,72.83340,2.144,FRC3,17,3,South Mumbai (Colaba-Byculla)
+985815,18.96700,72.80886,2.172,FRC1,34,7,South Mumbai (Colaba-Byculla)
+761002,18.95517,72.80397,2.188,FRC4,25,9,South Mumbai (Colaba-Byculla)
+f63167,18.95574,72.80427,2.28,FRC4,29,4,South Mumbai (Colaba-Byculla)
+35058a,18.95186,72.81583,2.289,FRC1,40,1,South Mumbai (Colaba-Byculla)
+57f915,18.95455,72.83331,2.29,FRC3,18,3,South Mumbai (Colaba-Byculla)
+a7453e,18.98900,72.83578,2.354,FRC4,26,5,South Mumbai (Colaba-Byculla)
+5bdf30,18.98903,72.83593,2.357,FRC4,28,5,South Mumbai (Colaba-Byculla)
+6b7a2d,18.96194,72.82643,2.56,FRC4,18,5,South Mumbai (Colaba-Byculla)
+8a5806,18.96599,72.80919,2.578,FRC1,32,3,South Mumbai (Colaba-Byculla)
+4e4e0d,18.93961,72.83135,2.595,FRC1,27,4,South Mumbai (Colaba-Byculla)
+f3eb52,18.91665,72.82278,2.653,FRC3,24,11,South Mumbai (Colaba-Byculla)
+9ca86c,18.96683,72.81995,2.81,FRC4,18,7,South Mumbai (Colaba-Byculla)
+829c10,18.96656,72.82042,2.866,FRC4,19,6,South Mumbai (Colaba-Byculla)
+0ee7088a,19.13852,72.80991,0.378,FRC4,20,1,other / edge

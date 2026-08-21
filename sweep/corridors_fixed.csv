@@ -1,0 +1,37 @@
+point_id,name,lat,lon,corridor,direction,notes
+weh_dahisar,WEH Dahisar toll naka,19.24891,72.86279,WEH,SB,"MOVED 262m onto FRC2 2.69km segment b64535 (Swami Vivekanand Marg, Dahisar East)"
+weh_borivali,WEH Borivali (National Park),19.22893,72.86342,WEH,SB,NO FIX - nearest usable segment 910m away; consider dropping
+weh_malad,WEH Malad East,19.18607,72.85845,WEH,SB,NO FIX - nearest usable segment 4738m away; consider dropping
+weh_goregaon,WEH Goregaon (Oberoi Mall),19.17283,72.85936,WEH,SB,NO FIX - nearest usable segment 3594m away; consider dropping
+weh_jvlr,WEH x JVLR flyover (Jogeshwari E),19.1235,72.8565,WEH,SB,NO FIX - nearest usable segment 1441m away; consider dropping
+weh_airport,WEH Airport / Sahar elevated approach,19.10341,72.85432,WEH,SB,"MOVED 245m onto FRC2 0.30km segment 4fdd8b (Western Express Highway, Ville Parle East)"
+weh_vile_parle,WEH Vile Parle,19.09324,72.85071,WEH,SB,NO FIX - nearest usable segment 870m away; consider dropping
+weh_kherwadi,WEH Kherwadi junction (Bandra E),19.0600,72.8470,WEH,SB,KEPT - records jams (156 congested slots)
+weh_kalanagar,WEH Kalanagar junction (BKC entry),19.05248,72.84492,WEH,junction,"MOVED 254m onto FRC2 1.29km segment 6f8327 (Western Express Highway, Bandra East)"
+weh_mahim,WEH south end / Mahim,19.04474,72.84050,WEH,junction,"MOVED 309m onto FRC2 0.37km segment 9381ee (Raheja Hospital Road, Mahim)"
+eeh_teen_hath,EEH Teen Hath Naka (Thane),19.1865,72.9717,EEH,junction,KEPT - records jams (71 congested slots)
+eeh_mulund,EEH Mulund check naka,19.1725,72.9565,EEH,junction,NO FIX - nearest usable segment 1431m away; consider dropping
+eeh_bhandup,EEH Bhandup,19.14166,72.94881,EEH,SB,KEPT - records jams (16 congested slots)
+eeh_vikhroli,EEH Vikhroli,19.10743,72.93163,EEH,SB,KEPT - records jams (111 congested slots)
+eeh_amar_mahal,EEH Amar Mahal junction (Ghatkopar/Chembur),19.05969,72.90602,EEH,junction,NO FIX - nearest usable segment 714m away; consider dropping
+eeh_chembur,EEH Chembur,19.05383,72.88671,EEH,SB,"MOVED 653m onto FRC2 0.52km segment 9a75b9 (V N Purav Marg, Chembur)"
+eeh_sion,EEH Sion flyover,19.04236,72.86427,EEH,SB,KEPT - records jams (124 congested slots)
+lbs_mulund,LBS Marg Mulund,19.17142,72.94344,LBS,both,"MOVED 0m onto FRC4 1.15km segment 87ed1d (Pandit Madan Mohan Malviya Marg, Mulund West)"
+lbs_bhandup,LBS Marg Bhandup,19.14516,72.92857,LBS,both,"MOVED 585m onto FRC4 2.19km segment 082563 (Quarry Road, Bhandup West)"
+lbs_kurla,LBS Marg x CST Rd (Kurla),19.0705,72.8790,LBS,junction,KEPT - records jams (14 congested slots)
+sv_irla,SV Road Irla (Vile Parle W),19.10795,72.83682,SV,both,"MOVED 0m onto FRC2 2.71km segment c1f1db (Gulmohar Road, Ville Parle West)"
+sv_bandra,SV Road Bandra,19.05212,72.83594,SV,both,"MOVED 387m onto FRC4 1.59km segment c08837 (Krishna Chandra Road, Bandra West)"
+linking_road,Linking Road Bandra,19.06415,72.83484,LINK,both,KEPT - records jams (13 congested slots)
+milan_subway,Milan subway (Santacruz),19.07509,72.83759,SV,junction,"MOVED 331m onto FRC4 2.12km segment 1c3865 (Church Avenue Road, Khar West)"
+andheri_subway,Andheri subway (SV Rd),19.11627,72.84344,SV,junction,"MOVED 309m onto FRC2 0.55km segment 823bf8 (CD Barfiwala Road, Andheri West)"
+jvlr_powai,JVLR Powai (Hiranandani),19.12023,72.90623,JVLR,both,KEPT - records jams (31 congested slots)
+jvlr_eeh,JVLR x EEH end (Kanjurmarg),19.11280,72.93152,JVLR,junction,"MOVED 528m onto FRC4 0.44km segment 653271 (Tagore Nagar Road, Vikhroli East)"
+sclr_kurla,SCLR (Kurla),19.06780,72.88937,SCLR,both,"MOVED 139m onto FRC4 1.35km segment 805d00 (Om Shiv Sai Mandir Marg, Kurla East)"
+sion_panvel,Sion-Panvel Hwy (Chembur naka),19.03919,72.89482,SPH,both,"MOVED 258m onto FRC4 1.82km segment ae0c13 (Ramkrishna Chemburkar Marg, Chembur)"
+ghodbunder,Ghodbunder Rd Manpada (Thane),19.23257,72.96988,GBR,both,"MOVED 93m onto FRC4 2.06km segment 34d1a1 (Barister Nath Pai Marg, Manpada)"
+annie_besant_worli,Annie Besant Rd (Worli),18.99556,72.81594,ABR,both,"MOVED 0m onto FRC1 1.57km segment bd16b4 (Doctor Annie Besant Road, Mahalakshmi)"
+sion_circle,Sion Circle,19.0430,72.8630,junction,junction,KEPT - records jams (30 congested slots)
+kings_circle,King's Circle (Matunga),19.02803,72.85669,junction,junction,"MOVED 104m onto FRC2 2.31km segment c2f4fa (Eastern Express Highway, Matunga East)"
+hindmata,Hindmata junction (Dadar E),19.01028,72.84267,junction,junction,"MOVED 25m onto FRC4 0.72km segment f5cbd3 (Doctor Babasaheb Ambedkar Road, Dadar East)"
+toi_junction,Times of India junction (DN Rd/CSMT),18.94026,72.83484,junction,junction,"MOVED 17m onto FRC1 1.33km segment 462bd3 (Sir Jamshedji Jeejeebhoy Road, Fort Area)"
+sakinaka,Sakinaka junction (Andheri-Kurla Rd),19.10284,72.88838,AKR,junction,"MOVED 73m onto FRC4 1.52km segment 404b67 (90 Feet Road, Sakinaka)"

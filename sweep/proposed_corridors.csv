@@ -1,0 +1,47 @@
+point_id,name,lat,lon,corridor,direction,notes
+weh_kherwadi,(kept) weh_kherwadi,19.06000,72.84700,,,existing point with proven jam record - do not move
+eeh_teen_hath,(kept) eeh_teen_hath,19.18650,72.97170,,,existing point with proven jam record - do not move
+eeh_bhandup,(kept) eeh_bhandup,19.14166,72.94881,,,existing point with proven jam record - do not move
+eeh_vikhroli,(kept) eeh_vikhroli,19.10743,72.93163,,,existing point with proven jam record - do not move
+eeh_sion,(kept) eeh_sion,19.04236,72.86427,,,existing point with proven jam record - do not move
+lbs_kurla,(kept) lbs_kurla,19.07050,72.87900,,,existing point with proven jam record - do not move
+linking_road,(kept) linking_road,19.06415,72.83484,,,existing point with proven jam record - do not move
+jvlr_powai,(kept) jvlr_powai,19.12023,72.90623,,,existing point with proven jam record - do not move
+sion_circle,(kept) sion_circle,19.04300,72.86300,,,existing point with proven jam record - do not move
+seg_7f73c9,"Dharamveer Swarajya Rakshak Chatrapati Sambhaji Maharaj Marg, Girgaon",18.94987,72.81830,,,sweep candidate FRC1 1.93km ff44 score8.92 - NAME AND VERIFY BEFORE USE
+seg_623793,"N S Road, Kurla East",19.05304,72.86808,,,sweep candidate FRC2 1.80km ff53 score8.81 - NAME AND VERIFY BEFORE USE
+seg_0eca33,"Eastern Express Highway, Ghatkopar East",19.07086,72.90740,,,sweep candidate FRC1 0.71km ff50 score8.64 - NAME AND VERIFY BEFORE USE
+seg_6f5cc7,"Sewri Fort Road, Uran",18.99814,72.85775,,,sweep candidate FRC2 1.12km ff61 score8.64 - NAME AND VERIFY BEFORE USE
+seg_063b66,"Dharamveer Swarajya Rakshak Chatrapati Sambhaji Maharaj Marg, New Shiv Sagar Estate Worli",18.98005,72.81135,,,sweep candidate FRC1 0.56km ff70 score8.61 - NAME AND VERIFY BEFORE USE
+seg_8458be,"Dharamveer Swarajya Rakshak Chatrapati Sambhaji Maharaj Marg, Narayan Pujari Nagar",18.99182,72.81099,,,sweep candidate FRC1 2.32km ff72 score8.61 - NAME AND VERIFY BEFORE USE
+seg_c2f4fa,"Eastern Express Highway, Matunga East",19.02907,72.85663,,,sweep candidate FRC2 2.31km ff27 score8.49 - NAME AND VERIFY BEFORE USE
+seg_9a75b9,"V N Purav Marg, Chembur",19.05399,72.88469,,,sweep candidate FRC2 0.52km ff38 score8.31 - NAME AND VERIFY BEFORE USE
+seg_8e3324,"K K Krishnan Menon Marg, Dharavi",19.03916,72.85346,,,sweep candidate FRC2 1.84km ff18 score8.26 - NAME AND VERIFY BEFORE USE
+seg_ead136,"S G Barve Marg, Santacruz East",19.07350,72.86250,,,sweep candidate FRC2 2.41km ff49 score8.20 - NAME AND VERIFY BEFORE USE
+seg_e6ed68,"Waman Tukaram Patil Road, Govandi",19.05872,72.91315,,,sweep candidate FRC1 2.60km ff49 score8.19 - NAME AND VERIFY BEFORE USE
+seg_74274e,"Bandra Kurla Complex Road, Bandra East",19.06009,72.86082,,,sweep candidate FRC2 1.12km ff27 score8.16 - NAME AND VERIFY BEFORE USE
+seg_94b37c,"Mahim Sion Link Road, Dharavi",19.04551,72.84679,,,sweep candidate FRC2 1.10km ff28 score8.12 - NAME AND VERIFY BEFORE USE
+seg_adefb5,"Rajiv Gandhi Sea Link, Worli Sea Face",19.01137,72.81229,,,sweep candidate FRC1 1.06km ff72 score8.02 - NAME AND VERIFY BEFORE USE
+seg_1b4a4d,"Netaji Subhash Marg, Church Gate",18.93601,72.82357,,,sweep candidate FRC1 1.45km ff31 score7.90 - NAME AND VERIFY BEFORE USE
+seg_2090a5,"Netaji Subhash Marg, Girgaon",18.95577,72.80975,,,sweep candidate FRC1 0.58km ff32 score7.79 - NAME AND VERIFY BEFORE USE
+seg_985815,"Altamount Road, Tardeo",18.96700,72.80886,,,sweep candidate FRC1 2.17km ff34 score7.71 - NAME AND VERIFY BEFORE USE
+seg_397bfb,"Behram Baug Road, Jogeshwari West",19.14391,72.84047,,,sweep candidate FRC2 0.66km ff17 score7.68 - NAME AND VERIFY BEFORE USE
+seg_823bf8,"CD Barfiwala Road, Andheri West",19.11609,72.84322,,,sweep candidate FRC2 0.55km ff32 score7.63 - NAME AND VERIFY BEFORE USE
+seg_445e4e,"Sri Mohanlal Parikh Marg, Borivali East",19.23872,72.85993,,,sweep candidate FRC2 1.79km ff30 score7.42 - NAME AND VERIFY BEFORE USE
+seg_038dbe,"New Link Road, Jogeshwari West",19.14599,72.83391,,,sweep candidate FRC2 0.58km ff22 score7.34 - NAME AND VERIFY BEFORE USE
+seg_6986cb,"Din Quarry Road, Chembur",19.04312,72.90896,,,sweep candidate FRC2 0.59km ff37 score7.29 - NAME AND VERIFY BEFORE USE
+seg_4e4e0d,"Azad Maidan Crossing Road, Fort Area",18.93961,72.83135,,,sweep candidate FRC1 2.60km ff27 score7.25 - NAME AND VERIFY BEFORE USE
+seg_e65ea5,"Western Express Highway, Aarey",19.14303,72.85519,,,sweep candidate FRC3 1.29km ff26 score7.12 - NAME AND VERIFY BEFORE USE
+seg_81546f,"LBS Road, Vartak Nagar",19.18634,72.95924,,,sweep candidate FRC2 0.90km ff24 score7.11 - NAME AND VERIFY BEFORE USE
+seg_0b9185,"Lokmanya Tilak Road, Borivali West",19.23160,72.83342,,,sweep candidate FRC2 1.60km ff26 score7.03 - NAME AND VERIFY BEFORE USE
+seg_9ac0cf,"Mrinaltai Gore Flyover, Goregaon East",19.15293,72.85068,,,sweep candidate FRC3 1.15km ff29 score6.93 - NAME AND VERIFY BEFORE USE
+seg_9e9796,"Adi Shankaracharya Marg, Powai",19.12509,72.89549,,,sweep candidate FRC2 0.46km ff33 score6.84 - NAME AND VERIFY BEFORE USE
+seg_42d052,"Dattapada Road, Borivali East",19.22102,72.85605,,,sweep candidate FRC4 2.18km ff30 score6.80 - NAME AND VERIFY BEFORE USE
+seg_6f411c,"SV Road, Malad West",19.19801,72.84620,,,sweep candidate FRC4 2.27km ff24 score6.71 - NAME AND VERIFY BEFORE USE
+seg_1b8991,"Eksar Road, Borivali West",19.22893,72.84834,,,sweep candidate FRC3 1.60km ff21 score6.70 - NAME AND VERIFY BEFORE USE
+seg_285eb2,"Bhim Nagar Lane, Ghatkopar West",19.09135,72.90558,,,sweep candidate FRC3 0.61km ff29 score6.64 - NAME AND VERIFY BEFORE USE
+seg_9fb7b1,"Veermata Jeejabai Bhosle Marg, Govandi",19.05734,72.92771,,,sweep candidate FRC1 2.77km ff37 score6.60 - NAME AND VERIFY BEFORE USE
+seg_4bfed4,"Siddheshwar Talao Road, Panch Pakhadi",19.20204,72.96726,,,sweep candidate FRC1 2.85km ff46 score6.57 - NAME AND VERIFY BEFORE USE
+seg_ca8afe,"Western Express Highway, Kandivali East",19.19158,72.85890,,,sweep candidate FRC4 0.48km ff26 score6.50 - NAME AND VERIFY BEFORE USE
+seg_9538e7,"SV Road, Dahisar East",19.24793,72.86319,,,sweep candidate FRC2 2.57km ff21 score6.33 - NAME AND VERIFY BEFORE USE
+seg_bbca6b,"Atmaram Sawant Road, Kandivali East",19.19882,72.85897,,,sweep candidate FRC4 1.92km ff19 score6.33 - NAME AND VERIFY BEFORE USE
