@@ -5,7 +5,7 @@ analysis or changing the point set.** Several of these were expensive to
 discover and are not obvious from the code; two of them invalidate analyses
 that look perfectly reasonable.
 
-Last updated: 2026-08-11.
+Last updated: 2026-08-30.
 
 ---
 
@@ -193,3 +193,57 @@ published map artifact embedded the payload (`sweep/recover_from_map.py`).
 - A failed probe must **never** be marked done. The sweep originally had this
   bug: network errors advanced the cursor and punched permanent invisible
   holes in the grid. Fixed; verified on real failures 2026-08-10.
+
+---
+
+## 9. The real TomTom Free-tier limit is 20,000/MONTH, not 2,500/day
+
+Confirmed by TomTom support on **2026-08-25** (ticket raised 27 Jul):
+
+> "The intended request limit for the Traffic Flow Segment Data API on the Free
+> Evaluation plan is 20,000 requests per month."
+>
+> "The team identified a configuration mismatch between the published
+> pricing/quota and the API gateway configuration. The API was still using an
+> older rate plan and the 20,000 monthly limit was not being enforced
+> correctly." … "You can expect these changes to take place in the next few
+> weeks."
+
+They also confirmed the limit is signalled by **HTTP 429**, not 403.
+
+**This project runs at ~72,000/month** (50 points x 48 polls x 30 days), i.e.
+**3.6x the real limit**. It has worked so far only because the gateway is
+misconfigured. ~27,800 requests in 30 days produced zero errors.
+
+### The risk
+
+If enforcement begins on the 1st of a month, the quota is exhausted in about
+**8 days** and every later request returns 429. Enforcement landing in early
+September would destroy the Ganeshotsav window (14–25 Sept), which cannot be
+recollected.
+
+### What fits under 20,000/month
+
+| config | per day | per month |
+|---|---|---|
+| 50 points every 2 h | 600 | 18,000 |
+| 27 points hourly | 648 | 19,440 |
+| 13 points every 30 min | 624 | 18,720 |
+
+### Decision taken 2026-08-30
+
+**Wait and risk it**, keeping 30-minute data, rather than pre-emptively
+rationing. Mitigation instead of prevention:
+
+`poll.py` now counts HTTP 429s per run and, if at least half the points are
+rate-limited, prints a QUOTA ALERT and **exits non-zero** so the GitHub Actions
+run fails and GitHub emails the owner the same day. A handful of 429s is just
+the QPS limiter and is ignored. The commit step runs with `if: always()` so
+data collected before the alert is still saved.
+
+**If that alert ever fires**, ration the rest of the month immediately and
+protect 14–25 Sept — suggested split: ~3,000 requests for 1–13 Sept (50 points
+every 2 h), ~16,000 for the festival (50 points hourly), ~1,000 for 26–30 Sept.
+
+Note cron-job.org will NOT warn about this: it only sees the workflow_dispatch
+call, which returns 204 whatever the workflow then does.

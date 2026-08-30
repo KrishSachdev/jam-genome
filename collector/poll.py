@@ -98,7 +98,7 @@ def main():
             except (KeyError, ValueError):
                 pass
 
-    ok = failed = 0
+    ok = failed = rate_limited = 0
     session = requests.Session()
     with open(out_path, "a", encoding="utf-8") as out:
         for pt in points:
@@ -119,10 +119,30 @@ def main():
             except Exception as err:
                 record["error"] = str(err)
                 failed += 1
+                if "429" in str(err):
+                    rate_limited += 1
             out.write(json.dumps(record) + "\n")
             time.sleep(INTER_POINT_SLEEP)
 
-    print(f"{ok} ok, {failed} failed -> {out_path.relative_to(ROOT)}")
+    print(f"{ok} ok, {failed} failed ({rate_limited} rate-limited) "
+          f"-> {out_path.relative_to(ROOT)}")
+
+    # TomTom told us (2026-08-25) the real Free-tier limit is 20,000 requests
+    # PER MONTH, not 2,500/day, and that their gateway is not yet enforcing it.
+    # We run at ~72,000/month, so the day they fix it the quota dies mid-month.
+    # A scattering of 429s is just the QPS limiter; most points failing that way
+    # in one run means the monthly quota is gone.
+    # Exit non-zero so the GitHub Actions run goes red and emails us the same
+    # day -- data written above is still committed (the commit step runs with
+    # `if: always()`).
+    if rate_limited >= max(3, len(points) // 2):
+        print(
+            f"\n*** QUOTA ALERT: {rate_limited}/{len(points)} points returned HTTP 429. ***\n"
+            "TomTom's 20,000/month Free-tier limit has probably started being enforced.\n"
+            "Ration the remaining month NOW and protect the Ganeshotsav window\n"
+            "(14-25 Sept): cut polling rate and/or point count. See FINDINGS.md."
+        )
+        sys.exit(1)
 
 
 if __name__ == "__main__":
