@@ -12,6 +12,14 @@ open traffic data died with Uber Movement (2023), so the collected dataset is
 itself a contribution. Full background in [CONTEXT.md](CONTEXT.md), build plan
 in [PLAN.md](PLAN.md).
 
+## Results
+
+- **[REPORT.md](REPORT.md)** / `REPORT.pdf` — findings from 51 days of collection
+- **[ML_REPORT.md](ML_REPORT.md)** — forecasting 30/60/90 min ahead; LSTM beats
+  persistence by 17–31%, with baselines that are actually hard to beat
+- **`dashboard.html`** — interactive explorer (open the file; no server needed).
+  Rebuild with `python analysis/dashboard.py`.
+
 ## Repo layout
 
 ```

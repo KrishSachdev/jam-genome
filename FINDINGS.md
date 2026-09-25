@@ -5,7 +5,7 @@ analysis or changing the point set.** Several of these were expensive to
 discover and are not obvious from the code; two of them invalidate analyses
 that look perfectly reasonable.
 
-Last updated: 2026-08-30.
+Last updated: 2026-09-10.
 
 ---
 
@@ -247,3 +247,29 @@ every 2 h), ~16,000 for the festival (50 points hourly), ~1,000 for 26–30 Sept
 
 Note cron-job.org will NOT warn about this: it only sees the workflow_dispatch
 call, which returns 204 whatever the workflow then does.
+
+### Outcome: the risk landed (2026-09-10)
+
+The gamble lost. Enforcement began during September:
+
+- September usage reached **18,936 successful requests by 8 Sept 21:42 UTC**,
+  then every request failed. The TomTom dashboard confirms
+  **Traffic Flow Segment Data API 20 000 / 20 000**, 7,800 4XX errors.
+- **The error is HTTP 403, not 429**, contrary to what support said:
+  `{"detailedError":{"code":"InsufficientFunds","message":"You do not have
+  enough credits to perform this action"}}`. The alert built on 30 Aug watched
+  only for 429, so it never fired and two days were lost silently. `poll.py`
+  now treats 403 and 429 alike.
+- **Ganeshotsav 2026 (14–25 Sept) was not captured.** Quota resets 1 October.
+
+**Free workaround that exists but was not taken:** each TomTom API has its own
+20,000/month allowance, and the **Routing API was still fully available**
+(verified 2026-09-10: `travelTimeInSeconds` 404 vs `noTrafficTravelTimeInSeconds`
+282 on a Kalanagar→Kherwadi route). Congestion can be derived as
+travel-time ÷ free-flow travel time. Caveats: routing engines reroute around
+congestion (use very short routes), the metric differs from speed ratio, and it
+cannot be joined to the existing baseline. Krish chose not to switch.
+
+**Lesson for any future collector:** verify the real quota and the exact error
+code before designing around a published figure, and alert on *any* sustained
+4XX, not one specific status.

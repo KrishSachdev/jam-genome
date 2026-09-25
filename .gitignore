@@ -9,3 +9,6 @@ analysis/outputs/
 sweep/sweep_map.html
 sweep/segment_map.html
 sweep/sweep_map_saved*
+analysis/figures/_pdf/
+# generated report/map outputs (regenerate with the scripts in analysis/ and sweep/)
+sweep/points_map.html

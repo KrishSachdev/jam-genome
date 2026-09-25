@@ -17,6 +17,8 @@ dashboard. Two headline deliverables:
 | [PLAN.md](PLAN.md) | Build plan, phase checklists, timeline, current status |
 | [CONTEXT.md](CONTEXT.md) | Origin, research references, decisions already made |
 | [sweep/README.md](sweep/README.md) | The citywide segment sweep and why it exists |
+| [REPORT.md](REPORT.md) | Findings from all data collected (also as REPORT.pdf) |
+| [ML_REPORT.md](ML_REPORT.md) | Forecasting models vs baselines |
 
 Update PLAN.md checkboxes as work lands, and add anything hard-won to
 FINDINGS.md.
@@ -39,7 +41,11 @@ FINDINGS.md.
 corridors.csv          monitoring points (the live set)
 adjacency.csv          hand-built neighbour graph, for propagation mining
 collector/             poll.py (the 30-min collector), validate_points.py, weather.py
-analysis/              episodes.py, eda.py, data_quality.py
+analysis/              episodes.py, eda.py, data_quality.py, stats.py,
+                       report.py (REPORT.md), publish.py (.docx + .pdf),
+                       dashboard.py (dashboard.html), rain_check.py
+dashboard.html         self-contained interactive explorer -- open it directly
+ml/                    dataset.py, train.py, report_ml.py -- forecasting
 sweep/                 citywide segment enumeration + point-selection tooling
 data/raw/              YYYY-MM-DD.jsonl, one line per point per poll (UTC-dated)
 .github/workflows/     collect.yml — runs on workflow_dispatch only

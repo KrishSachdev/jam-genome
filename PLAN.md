@@ -61,37 +61,17 @@ on the project and it invalidates the Phase 3 ranking until fixed.
 **Design rule going forward: one point per distinct TomTom segment.** Two
 points on one segment return the identical number.
 
-## Phase 2.7 — Ganeshotsav natural experiment (Aug–Sept 2026) — PRIMARY
+## Phase 2.7 — Ganeshotsav natural experiment — NOT CAPTURED
 
-Promoted from a Phase 5 stretch idea to a headline deliverable, because the
-2026 timing lines up: baseline collection now, festival in ~5 weeks.
+Abandoned 2026-09-10. TomTom began enforcing the 20,000 requests/month
+free-tier limit and September's quota was exhausted on **8 Sept**, six days
+before Ganesh Chaturthi. Quota resets 1 October, after visarjan. A free
+workaround existed (the Routing API has its own untouched 20,000/month
+allowance) but was declined — see [FINDINGS.md](FINDINGS.md) §9.
 
-| date | phase |
-|---|---|
-| 2026-08-12 → 09-13 | **baseline** (~33 days) |
-| **2026-09-14** (Mon) | Ganesh Chaturthi — pandals open, 10 days of queues |
-| 09-15, 17, 18, 20 | intermediate immersion days (1½, 3, 5, 7-day idols) |
-| **2026-09-25** (Fri) | **Anant Chaturdashi** — main visarjan, the peak |
-
-Design is a repeated-measures before/during/after with controls:
-
-- **Event points** — Lalbaug/Parel pandal cluster, Hindmata, Parel TT,
-  Kalachowki, G.D. Ambekar, S.K. Bole, GSB King's Circle, Andhericha Raja,
-  Khetwadi.
-- **Visarjan points** — Girgaon Chowpatty (Lalbaugcha Raja's destination),
-  Marine Drive approach, Dadar Chowpatty, Juhu, Versova, Powai Lake, Bandra
-  Bandstand.
-- **Controls** — Mulund, Borivali, Kandivali, Malad, Ghatkopar, Vikhroli. Far
-  from any pandal or immersion route. **Without these the result is not
-  defensible** — a reviewer will say September was simply busier or wetter.
-- Mumbai Traffic Police closed 84 roads and made 54 one-way in 2025, so the
-  effect should be enormous and unambiguous.
-- Note the reversal: normally free-flowing roads (Marine Drive, Girgaon) are
-  the *best* signal here — maximum contrast, no baseline congestion to muddy it.
-
-Analysis: episode counts and congestion-hours per point per day, baseline vs
-festival vs each immersion day, controls differenced out. The intermediate
-immersion days give repeated measures rather than one event.
+What survives: 51 days of collected data, written up in [REPORT.md](REPORT.md).
+The point-set revision is validated — 42 of 50 points now record congestion
+against 19 of 36 before.
 
 ## Phase 3 — Propagation mining (the core, weeks 5–8)
 
@@ -120,6 +100,31 @@ Methods, simplest-first (references in CONTEXT.md):
 - ~~Event shockwaves overlay: Ganesh Chaturthi~~ — **promoted to Phase 2.7 above.** Wankhede match days remain a stretch.
 - Nowcasting: predict downstream congestion 30–60 min ahead from upstream state (gradient-boosting baseline → temporal GNN if justified).
 - Expand point set / second city comparison.
+
+## Phase 6 — Forecasting models (done 2026-09-10)
+
+Predict a point's speed ratio 30/60/90 minutes ahead. Directly extends the
+owner's published LSTM short-horizon forecasting work into a new domain, on
+data collected for this project.
+
+- [x] Supervised dataset with a strict **temporal** split (`ml/dataset.py`)
+- [x] Three baselines that must be beaten: persistence, historical average,
+      seasonal naive
+- [x] Ridge, XGBoost and an LSTM (`ml/train.py`)
+- [x] Evaluation on MAE/RMSE/MAPE plus congestion F1, and separately on rush
+      hours and already-slow roads — overall MAE flatters everyone because 97%
+      of rows are free-flowing
+- [x] [ML_REPORT.md](ML_REPORT.md)
+
+**Result:** the LSTM wins at every horizon and its margin over persistence
+*grows* with horizon (+17% / +23% / +31%). Historical average beats persistence
+from 60 minutes out — Mumbai traffic is routine enough that the clock predicts
+better than the present, once you look far enough ahead. Congestion-alarm F1
+sits near 0.5: useful, not solved.
+
+**Not attempted, deliberately:** spatio-temporal graph networks (DCRNN, Graph
+WaveNet). They are built for METR-LA-scale data — 34,000+ time steps. This
+dataset has 868. More collection is the single biggest available improvement.
 
 ## Risks & honest notes
 

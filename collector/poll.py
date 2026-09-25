@@ -119,7 +119,12 @@ def main():
             except Exception as err:
                 record["error"] = str(err)
                 failed += 1
-                if "429" in str(err):
+                # TomTom said quota exhaustion returns 429. It does NOT --
+                # on 2026-09-08 the quota ran out and every request returned
+                # 403 {"code":"InsufficientFunds"}. Watching only for 429 meant
+                # the alert never fired and two days were lost silently.
+                # Watch for both.
+                if "429" in str(err) or "403" in str(err):
                     rate_limited += 1
             out.write(json.dumps(record) + "\n")
             time.sleep(INTER_POINT_SLEEP)
@@ -137,8 +142,8 @@ def main():
     # `if: always()`).
     if rate_limited >= max(3, len(points) // 2):
         print(
-            f"\n*** QUOTA ALERT: {rate_limited}/{len(points)} points returned HTTP 429. ***\n"
-            "TomTom's 20,000/month Free-tier limit has probably started being enforced.\n"
+            f"\n*** QUOTA ALERT: {rate_limited}/{len(points)} points returned HTTP 429/403. ***\n"
+            "TomTom quota is exhausted (403 InsufficientFunds) or rate-limited (429).\n"
             "Ration the remaining month NOW and protect the Ganeshotsav window\n"
             "(14-25 Sept): cut polling rate and/or point count. See FINDINGS.md."
         )
